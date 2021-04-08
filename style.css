@@ -3,14 +3,22 @@
     padding: 0;
     }
 body {  
-    font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Font Awesome', 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 .main_container {
   max-width: 1140px;
   background-color: #ffffff;
   margin: 0 auto;
 }
-
+/*ОБОЛОЧКА*/
+.height100 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  flex-grow: 1;
+}
 /*ШАПКА*/
 .header_container {
   display: flex;
@@ -24,11 +32,11 @@ body {
   border-bottom: 1px solid #ffffff;
 }
 .brand {
-  padding: 35px 36px 6px 0px;
+  padding: 30px 36px 26px 0px;
   color: #222222;
   font-size: 27px;
   font-weight: 300;
-  line-height: 32px;
+
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 0.68px;
@@ -44,10 +52,34 @@ body {
   top: -14px;
   margin-right: 13px;
 }
+
+/*// Для дитейлз, кажется fierfox не реагирует на удаление маркера
+// summary { //не реагирует на оформление стилей
+//   padding: 9px 20px;
+//   color: #ffffff;
+//   background-color: #f16d7f;
+//   font-size: 14px;
+//   font-weight: 300;
+//   letter-spacing: 0.35px;
+// }
+// summary::-webkit-details-marker {
+//   display: none;
+// }
+// summary::after {
+//   content: '\25B6';
+//   padding-right: 0.5em;
+// }
+// details[open] > summary::after {
+//   content: '\25BC';
+// }
+//стили для кнопки browse которые деактивированы из-за дитейлза - вернул
+//  .goods_button_small {
+ //  }*/
+
 .goods_button_small_box {
   display: flex;
   justify-content: center;
-  }
+}
 .goods_button_small_button {
   padding: 9px 20px;
   color: #ffffff;
@@ -61,7 +93,6 @@ body {
   border: 1px solid #e6e6e6;
   background-color: #cdcdcc;
   background-image: linear-gradient(#f9f9f9 0%, #f5f5f5 100%);
-  padding: 9px 21px;
 }
 .header_search_form {
   width: 279px;
@@ -81,6 +112,7 @@ body {
   top: -1px;
 }
 .cart {
+  display: flex;
   flex-grow: 1;
   justify-content: flex-end;
 }
@@ -120,7 +152,158 @@ top: 8px;
 .menu_list {
   position: relative;
 }
-/*выпадающее*/
+/*выпадающее меню browse не активно тк не удалось запустить дитейлз на лисе*/
+.menu_browse_header {
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 0 20px 15px;
+  position: absolute;
+  left: -435px;
+  top: 16px;
+  background-color: #ffffff;
+  display: flex;
+  //display: none;
+  flex-direction: column;
+  z-index: 1;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  
+}
+.menu_browse_header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  transform-origin: center;
+  transform: rotate(45deg);
+  top: -7px;
+  left: 77px;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+
+/*выпадающее меню my account не активно тк не удалось запустить дитейлз на лисе*/
+.menu_account_header_box {
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 0 20px 15px;
+  position: absolute;
+  left: 1100px;
+  top: 75px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  //display: none;
+  z-index: 1;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+.menu_account_header_box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  transform-origin: center;
+  transform: rotate(45deg);
+  top: -7px;
+  left: 33px;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+.menu_account_header_box:first-of-type {
+  padding-top: 5px;
+}
+.menu_account_header {
+  display: flex;
+  align-items: center;
+}
+.my {
+  float: left;
+  padding-top: 16px;
+ }
+.menu_account_item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  padding-top: 10px;
+  margin-right: 55px;
+}
+.menu_account_item_top {
+  color: #222222;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 7px;
+}
+.menu_account_item_stars {
+  color: #e4af48;
+  font-family: "Font Awesome";
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 7px;
+}
+.menu_account_item_price {
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 7px;
+}
+.x {
+  font-size: 10px;
+}
+.menu_account_item_dot {
+  color: #c0c0c0;
+  font-family: "Font Awesome";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.item_line {
+  margin: 17px 0px;
+  border: 1px solid #ededed;
+}
+.menu_account_item_total {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+.my_checkout {
+  display: flex;
+  justify-content: center;
+}
+.my_checkout button {
+  color: #ffffff;
+  font-family: "Lato - Black";
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+}
+.w100 {
+  width: 100%;
+}
+.menu_account_header_box:last-of-type  .my_checkout{
+  padding-top: 11px;
+}
+.goods_button_cart {
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  padding: 13px 23px;
+}
+.my_cart {
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/*выпадающее большое меню*/
 .menu_mega_header {
   border: 1px solid #e8e8e8;
   border-radius: 5px;
@@ -129,7 +312,8 @@ top: 8px;
   top: 55px;
   background-color: #ffffff;
   display: none;
-  }
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
 .menu_list:hover .menu_mega_header {
   display: flex;
 }
@@ -172,8 +356,8 @@ margin-top: 13px;
 .menu_mega_link li a {
   display: inline-block;
   width: 235px;
- text-decoration: none;
- color: #646464;
+  text-decoration: none;
+  color: #646464;
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
@@ -348,22 +532,43 @@ img[alt="Корзина"] {
   opacity: 0;
   position: absolute;
 }
+
 .goods_cart {
   position: absolute;
-  width: 123px;
-  height: 39px;
-  border: 1px solid #ffffff;
-  margin-top: 98px;
-  margin-left: 70px;
+  width: 263px;
+  height: 279px;
+  margin-top: -283px;
+  margin-left: 0px;
   color: #ffffff;
   font-size: 13px;
   font-weight: 700;
   opacity: 0;
   text-align: center;
+  padding-top: 86px;
+  background-color: #3a3838;
+  box-sizing: border-box;
+}
+.goods_cart_border {
+  position: absolute;
+  width: 123px;
+  height: 39px;
+  border: 1px solid #ffffff;
+  margin-top: -193px;
+  margin-left: 70px;
+  opacity: 0;
   padding-top: 8px;
   box-sizing: border-box;
 }
+.goods_cart::before {
+  content: url(img/cart.png);
+  position: relative;
+  left: -6px;
+  top: 8px;
+  }
 .goods_cart:hover {
+  opacity: 0.7;
+}
+.goods_cart_border:hover {
   opacity: 1;
 }
 img[alt="Корзина"]:hover {
@@ -411,7 +616,7 @@ img[alt="Корзина"]:hover {
   border: 1px solid #e6e6e6;
   background-color: #cdcdcc;
   background-image: linear-gradient(#f9f9f9 0%, #f5f5f5 100%);
-  margin-bottom: 2px;
+  // margin-bottom: 2px;
 }
 /*ОФЕРТА*/
 .offer {
@@ -605,11 +810,88 @@ color: #222224;
   background-color: #cdcdcc;
   background-image: linear-gradient(#f9f9f9 0%, #f5f5f5 100%);
 }
+/*ФУТТЕР*/
 /*Футтер меню*/
-
-
-
-
-
-
-
+.footer_upper_box {
+  height: 458px;
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 66px;
+  padding-bottom: 70px;
+}
+.footer_text_block {
+  color: #898989;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  padding-right: 63px;
+  padding-top: 22px;
+  width: 427px;
+}
+.footer_menu {
+  display: flex;
+}
+.footer_list li a {
+  width: 230px;
+  color: #898989;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0.4px;
+}
+.footer_heder_list {
+  color: #f16d7f;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+  margin-bottom: 34px;
+  padding-top: 34px;
+}
+/*Футтер самый низ*/
+.footer_lower_box {
+  background-color: #e6e6e6;
+}
+.footer_lower_container {
+  height: 79px;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.copyright {
+  color: #7a7a7a;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+.social_list {
+  display: flex;
+}
+.social_list p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  margin-right: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #b2b2b2;
+  font-family: "Font Awesome";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0.4px;
+}
+#twitter {
+  background-color: #f16d7f;
+}
+.social_list a {
+  text-decoration-line: none;
+  font-family: 'Font Awesome';
+}
