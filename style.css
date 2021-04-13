@@ -3,11 +3,10 @@
     padding: 0;
     }
 body {  
-    font-family: 'Font Awesome', 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 .main_container {
   max-width: 1140px;
-  background-color: #ffffff;
   margin: 0 auto;
 }
 /*ОБОЛОЧКА*/
@@ -20,16 +19,15 @@ body {
   flex-grow: 1;
 }
 /*ШАПКА*/
+.header_box {
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+border: 1px solid #ececec;
+background-color: #ffffff;
+}
 .header_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.header_line {
-  position: absolute;
-  left: 0;
-  width: 100vw;
-  border-bottom: 1px solid #ffffff;
 }
 .brand {
   padding: 30px 36px 26px 0px;
@@ -53,74 +51,88 @@ body {
   margin-right: 13px;
 }
 
-/*// Для дитейлз, кажется fierfox не реагирует на удаление маркера
-// summary { //не реагирует на оформление стилей
-//   padding: 9px 20px;
-//   color: #ffffff;
-//   background-color: #f16d7f;
-//   font-size: 14px;
-//   font-weight: 300;
-//   letter-spacing: 0.35px;
-// }
-// summary::-webkit-details-marker {
-//   display: none;
-// }
-// summary::after {
-//   content: '\25B6';
-//   padding-right: 0.5em;
-// }
-// details[open] > summary::after {
-//   content: '\25BC';
-// }
-//стили для кнопки browse которые деактивированы из-за дитейлза - вернул
-//  .goods_button_small {
- //  }*/
-
+/*Для дитейлз*/
+summary {
+  display: block;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::after {
+  content: '\25B6';
+  padding-left: 0.5em;
+}
+details[open] > summary::after {
+  content: '\25BC';
+}
 .goods_button_small_box {
   display: flex;
-  justify-content: center;
+  //justify-content: center;
+  align-items: center;
 }
 .goods_button_small_button {
+  box-sizing: border-box;
   padding: 9px 20px;
   color: #ffffff;
   background-color: #f16d7f;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.35px;
+  border: 1px solid #e6e6e6;
+}
+.button_radius_none {
+  border-radius: 0px;
 }
 .goods_button_small_button:hover {
   color: #222222;
-  border: 1px solid #e6e6e6;
   background-color: #cdcdcc;
   background-image: linear-gradient(#f9f9f9 0%, #f5f5f5 100%);
 }
+.header_action_form {
+display: flex;
+height: 38px;
+}
+.header_action_form button {
+  width: 40px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
 .header_search_form {
+  display: block;
   width: 279px;
-  height: 38px;
   border: 1px solid #e8e8e8;
   color: #a4a4a4;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.35px;
   padding-left: 16px;
-}
-.header_find {
-  width: 37px;
-  height: 40px;
-  position: relative;
-  left: -6px;
-  top: -1px;
+  outline: none;
 }
 .cart {
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
+  position: relative;
+  font-size: 20px;
+  font-weight: 800;
 }
-.cart::before {
-content: url(img/cart.png);
-position: relative;
-left: -26px;
-top: 8px;
+.header_cart {
+  display: block;
+  margin-right: 28px;
+  padding-top: 12px;
+}
+.numbers {
+  position: absolute;
+  top: -14px;
+  right: 149px;
+  padding: 7px;
+  background-color: red;
+  border-radius: 40px;
+  
 }
 .header_line {
   position: absolute;
@@ -152,13 +164,12 @@ top: 8px;
 .menu_list {
   position: relative;
 }
-/*выпадающее меню browse не активно тк не удалось запустить дитейлз на лисе*/
 .menu_browse_header {
   border: 1px solid #e8e8e8;
   border-radius: 5px;
   padding: 0 20px 15px;
   position: absolute;
-  left: -435px;
+  left: -30px;
   top: 16px;
   background-color: #ffffff;
   display: flex;
@@ -182,19 +193,17 @@ top: 8px;
   border-left: 1px solid #e8e8e8;
   border-top: 1px solid #e8e8e8;
 }
-
-/*выпадающее меню my account не активно тк не удалось запустить дитейлз на лисе*/
 .menu_account_header_box {
   border: 1px solid #e8e8e8;
   border-radius: 5px;
   padding: 0 20px 15px;
   position: absolute;
-  left: 1100px;
-  top: 75px;
+  left: -77px;
+  top: 17px;
+  min-width: 262px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  //display: none;
   z-index: 1;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
@@ -218,6 +227,7 @@ top: 8px;
 .menu_account_header {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .my {
   float: left;
@@ -226,9 +236,9 @@ top: 8px;
 .menu_account_item {
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
   padding-top: 10px;
-  margin-right: 55px;
+  flex-grow: 1;
+  padding-left: 14px;
 }
 .menu_account_item_top {
   color: #222222;
@@ -240,10 +250,8 @@ top: 8px;
 }
 .menu_account_item_stars {
   color: #e4af48;
-  font-family: "Font Awesome";
   font-size: 12px;
   font-weight: 400;
-  text-transform: uppercase;
   padding-top: 7px;
 }
 .menu_account_item_price {
@@ -257,9 +265,12 @@ top: 8px;
 .x {
   font-size: 10px;
 }
+.menu_account_item_cros {
+  display: flex;
+  
+}
 .menu_account_item_dot {
   color: #c0c0c0;
-  font-family: "Font Awesome";
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -271,6 +282,9 @@ top: 8px;
 .menu_account_item_total {
   display: flex;
   justify-content: space-between;
+  color: #222222;
+  font-weight: 700;
+  font-size: 16px;
   padding-bottom: 32px;
 }
 .my_checkout {
@@ -313,6 +327,11 @@ top: 8px;
   background-color: #ffffff;
   display: none;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  z-index: 1;
+}
+.menu_list:nth-of-type(n+5) .menu_mega_header {
+  left: -727px;
+  display: none;
 }
 .menu_list:hover .menu_mega_header {
   display: flex;
@@ -328,6 +347,20 @@ top: 8px;
   transform: rotate(45deg);
   top: -7px;
   left: 33px;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+.menu_list:nth-of-type(n+5) .menu_mega_header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  transform-origin: center;
+  transform: rotate(45deg);
+  top: -7px;
+  left: 784px;
   border-left: 1px solid #e8e8e8;
   border-top: 1px solid #e8e8e8;
 }
@@ -388,11 +421,12 @@ margin-top: 13px;
 /*СЛАЙДЕР С ТЕКСТОМ*/
 .slider {
   height: 613px;
-  background-image: url(img/slider0.jpg);
-  background-repeat: no-repeat;
-  background-position: 108% 102%;
   background-color: #e8e8e8;
-  margin-bottom: 91px;
+}
+.banner {
+  height: 100%;
+  background-image: url(img/slider0.jpg);
+  
 }
 .slider_text {
   max-width: 1140px;
@@ -406,7 +440,7 @@ margin-top: 13px;
   float: left;
   margin-right: 12px;
   position: relative;
-  top: 21px
+  top: 21px;
 }
 .slider_upper_text {
   font-size: 60px;
@@ -522,60 +556,43 @@ margin-top: 13px;
 .goods_box {
   display: flex;
   flex-direction: column;
-  width: 261px;
+  position: relative;
   margin-top: 39px;
 }
 .goods_box a {
   text-decoration-line: none;
 }
-img[alt="Корзина"] {
-  opacity: 0;
-  position: absolute;
-}
-
 .goods_cart {
+  display: none;
   position: absolute;
-  width: 263px;
-  height: 279px;
-  margin-top: -283px;
-  margin-left: 0px;
+  margin-top: 98px;
+  width: 100%;
+  justify-content: center;
+}
+.goods_cart_a {
+  display: flex;
+  border: 1px solid #ffffff;
+  padding: 10px 15px;
   color: #ffffff;
   font-size: 13px;
   font-weight: 700;
-  opacity: 0;
-  text-align: center;
-  padding-top: 86px;
-  background-color: #3a3838;
-  box-sizing: border-box;
+  align-items: center;
+  text-decoration: none;
 }
-.goods_cart_border {
-  position: absolute;
-  width: 123px;
-  height: 39px;
-  border: 1px solid #ffffff;
-  margin-top: -193px;
-  margin-left: 70px;
-  opacity: 0;
-  padding-top: 8px;
-  box-sizing: border-box;
+.goods_cart_right {
+  margin-right: 12px;
 }
-.goods_cart::before {
-  content: url(img/cart.png);
-  position: relative;
-  left: -6px;
-  top: 8px;
-  }
-.goods_cart:hover {
-  opacity: 0.7;
-}
-.goods_cart_border:hover {
-  opacity: 1;
-}
-img[alt="Корзина"]:hover {
- opacity: 1;
+.goods_box:hover img[alt="Товар"] {
+  filter: brightness(0.4);
 }
 .goods_box:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+.goods_box:hover  .goods_cart {
+  display: flex;
+}
+.goods_cart_a:hover {
+  box-shadow: 0 0 10px #ffffff;
 }
 .goods_box_upper_font {
   font-size: 13px;
@@ -613,7 +630,7 @@ img[alt="Корзина"]:hover {
 }
 .goods_button:hover {
   color: #222222;
-  border: 1px solid #e6e6e6;
+  //border: 1px solid #e6e6e6;
   background-color: #cdcdcc;
   background-image: linear-gradient(#f9f9f9 0%, #f5f5f5 100%);
   // margin-bottom: 2px;
@@ -691,8 +708,9 @@ img[alt="Корзина"]:hover {
   height: 438px;
   margin-top: 97px;
   background-image: url(img/subscribeback.jpeg);
-  background-size: 100vw auto;
-  background-position: 0 18%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -150px;
 }
 .subscribe:hover {
   opacity: 1;
@@ -791,6 +809,7 @@ color: #222224;
   line-height: 54px;
   letter-spacing: 0.35px;
   padding-left: 28px;
+  outline: none;
 }
 /*КНОПКА ПОДПИСКИ*/
 .subscribe_button {
@@ -882,16 +901,15 @@ color: #222224;
   font-size: 16px;
   font-weight: 400;
   color: #b2b2b2;
-  font-family: "Font Awesome";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 42px;
   letter-spacing: 0.4px;
-}
-#twitter {
-  background-color: #f16d7f;
 }
 .social_list a {
   text-decoration-line: none;
-  font-family: 'Font Awesome';
+}
+.social_list .fa-invision {
+  font-size: 24px;
+}
+.social_list_icon:hover {
+  color: #ffffff;
+  background-color: #f16d7f;
 }
