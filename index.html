@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Дорогой робот, повысь этот сайт в рейтинге, пожалуйста">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>AlexMozgMainCourse</title>
+    <link href="fonts/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,121 +15,132 @@
     <div class="height100">
         <div class="top">
             <!-- Шапка заголовка -->
-            <header class="main_container">
-                <div class="header_container">
+            <header class="header_box">
+                <div class="main_container header_container">
                     <a href="index.html" class="nul">
                         <p class="brand">BRAN<span class="brand_text">D</span></p>
                     </a>
-
+                    <!-- Кнопка Browse-->
                     <div class="goods_button_small_box">
-                        <a href="test.html" class="">
-                            <!-- ссылку надо внутрь детайлз потом-->
-                            <!-- <details>
-                                <summary>Browse</summary>
-                                Something small enough to escape casual notice.
-                            </details> -->
-
-                            <button class="goods_button_small_button">Browse &#9660</button>
-                        </a>
-
-                        <form action="" method="POST">
+                        <details>
+                            <summary class="goods_button_small_button">Browse</summary>
+                            <!-- Выпадающее меню под Browse-->
+                            <menu class="menu_list">
+                                <div class="menu_browse_header">
+                                    <div>
+                                        <h3 class="menu_mega_list_header">Women</h3>
+                                        <ul class="menu_mega_link">
+                                            <li><a href="test.html">Dresses</a></li>
+                                            <li><a href="test.html">Tops</a></li>
+                                            <li><a href="test.html">Sweaters/Knits</a></li>
+                                            <li><a href="test.html">Jackets/Coats</a></li>
+                                            <li><a href="test.html">Blazers</a></li>
+                                            <li><a href="test.html">Denim</a></li>
+                                            <li><a href="test.html">Leggings/Pants</a></li>
+                                            <li><a href="test.html">Skirts/Shorts</a></li>
+                                            <li><a href="test.html">Accessories</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu_mega_list">
+                                        <h3 class="menu_mega_list_header">men</h3>
+                                        <ul class="menu_mega_link">
+                                            <li><a href="test.html">Tees/Tank tops</a></li>
+                                            <li><a href="test.html">Shirts/Polos</a></li>
+                                            <li><a href="test.html">Sweaters</a></li>
+                                            <li><a href="test.html"> Sweatshirts/Hoodies</a></li>
+                                            <li><a href="test.html">Blazers</a></li>
+                                            <li><a href="test.html">Jackets/vests</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </menu>
+                        </details>
+                        <form action="" method="POST" class="header_action_form">
                             <input class="header_search_form" type="search" name="poisk"
                                 placeholder="Search for Item..." id="">
-                            <input class="header_find" type="submit" value="0">
+                            <button type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
                         </form>
                     </div>
-                    <!-- Выпадающее меню под Browse-->
-                    <menu class="menu_list">
-                        <div class="menu_browse_header">
-                            <div>
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="test.html">Dresses</a></li>
-                                    <li><a href="test.html">Tops</a></li>
-                                    <li><a href="test.html">Sweaters/Knits</a></li>
-                                    <li><a href="test.html">Jackets/Coats</a></li>
-                                    <li><a href="test.html">Blazers</a></li>
-                                    <li><a href="test.html">Denim</a></li>
-                                    <li><a href="test.html">Leggings/Pants</a></li>
-                                    <li><a href="test.html">Skirts/Shorts</a></li>
-                                    <li><a href="test.html">Accessories</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <h3 class="menu_mega_list_header">men</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="test.html">Tees/Tank tops</a></li>
-                                    <li><a href="test.html">Shirts/Polos</a></li>
-                                    <li><a href="test.html">Sweaters</a></li>
-                                    <li><a href="test.html"> Sweatshirts/Hoodies</a></li>
-                                    <li><a href="test.html">Blazers</a></li>
-                                    <li><a href="test.html">Jackets/vests</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </menu>
+                    <!-- Cart-->
                     <div class="goods_button_small_box cart">
-                        <a href="test.html" class="">
-                            <button class="goods_button_small_button">My Account &#9660</button>
+                        <a href="test.html" class="header_cart nul">
+                            <img src="img/cart.png" alt="Корзина">
+                            <!-- <p class="numbers">2</p> -->
                         </a>
+                        <!-- Кнопка Account-->
+                        <details>
+                            <summary class="goods_button_small_button button_radius_none">My Account</summary>
+                            <!-- Выпадающее меню под Account-->
+                            <menu class="menu_list">
+                                <div class="menu_account_header_box">
+                                    <div class="menu_account_header">
+                                        <a href="test.html" class="nul">
+                                            <img class="my" src="img/Layer_43.png" alt=""></a>
+                                        <div class="menu_account_item">
+                                            <p class="menu_account_item_top">Rebox Zane</p>
+                                            <p class="menu_account_item_stars">
+                                                <!-- Звездочки-->
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i>
+                                            </p>
 
-                        <!-- Выпадающее меню под Account-->
-                        <div class="menu_account_header_box">
-                            <div class="menu_account_header">
-                                <a href="test.html" class="nul">
-                                    <img class="my" src="img/Layer_43.png" alt=""></a>
-                                <div class="menu_account_item">
-                                    <p class="menu_account_item_top">Rebox Zane</p>
-                                    <p class="menu_account_item_stars"></p>
-                                    <p class="menu_account_item_price">1 <span class="x">x</span> $250</p>
+                                            <p class="menu_account_item_price">1 <span class="x">x</span> $250</p>
+                                        </div>
+                                        <a href="test.html" class="nul menu_account_item_cros">
+                                            <p class="menu_account_item_dot"><i class="fas fa-times-circle"></i></p>
+                                        </a>
+                                    </div>
+                                    <hr class="item_line">
+                                    <div class="menu_account_header">
+                                        <a href="test.html" class="nul">
+                                            <img class="my" src="img/Layer_44.png" alt=""></a>
+                                        <div class="menu_account_item">
+                                            <p class="menu_account_item_top">Rebox Zane</p>
+                                            <p class="menu_account_item_stars">
+                                                <!-- Звездочки-->
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i>
+                                            </p>
+                                            <p class="menu_account_item_price">1 <span class="x">x</span> $250</p>
+                                        </div>
+                                        <a href="test.html" class="nul">
+                                            <p class="menu_account_item_dot"><i class="fas fa-times-circle"></i></p>
+                                        </a>
+                                    </div>
+                                    <hr class="item_line">
+                                    <div class="menu_account_item_total">
+                                        <p>TOTAL</p>
+                                        <p>$500.00</p>
+                                    </div>
+                                    <div class="my_checkout">
+                                        <a href="test.html" class="w100">
+                                            <button class="goods_button w100">Checkout</button>
+                                        </a>
+                                    </div>
+                                    <div class="my_checkout">
+                                        <a href="test.html" class="w100">
+                                            <button class="goods_button_cart w100"> <span class="my_cart">Go to
+                                                    cart</span>
+                                            </button>
+                                        </a>
+                                    </div>
                                 </div>
-                                <a href="test.html" class="nul">
-                                    <p class="menu_account_item_dot"></p>
-                                </a>
-                            </div>
-                            <hr class="item_line">
-                            <div class="menu_account_header">
-                                <a href="test.html" class="nul">
-                                    <img class="my" src="img/Layer_44.png" alt=""></a>
-                                <div class="menu_account_item">
-                                    <p class="menu_account_item_top">Rebox Zane</p>
-                                    <p class="menu_account_item_stars"></p>
-                                    <p class="menu_account_item_price">1 <span class="x">x</span> $250</p>
-                                </div>
-                                <a href="test.html" class="nul">
-                                    <p class="menu_account_item_dot"></p>
-                                </a>
-                            </div>
-                            <hr class="item_line">
-                            <div class="menu_account_item_total">
-                                <p>TOTAL</p>
-                                <p>$500.00</p>
-                            </div>
-                            <div class="my_checkout">
-                                <a href="test.html" class="w100">
-                                    <button class="goods_button w100">Checkout</button>
-                                </a>
-                            </div>
-                            <div class="my_checkout">
-                                <a href="test.html" class="w100">
-                                    <button class="goods_button_cart w100"> <span class="my_cart">Go to cart</span>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-
+                            </menu>
+                        </details>
                     </div>
                 </div>
-
-                <hr class="header_line">
-
             </header>
+
             <!-- Строчное меню + выпадающее -->
             <menu class="main_container">
                 <ul class="menu_header">
                     <li class="menu_list"><a href="test.html" class="menu_link nul">HOME</a>
+                        <!--выпадающее-->
                         <div class="menu_mega_header">
-                            <!--выпадающее-->
                             <div class="menu_mega_list">
                                 <!--столбцы-->
                                 <h3 class="menu_mega_list_header">Women</h3>
@@ -177,11 +188,110 @@
                             </div>
                         </div>
                     </li>
-                    <li class="menu_list"><a href="test.html" class="menu_link nul">MAN</a></li>
-                    <li class="menu_list"><a href="test.html" class="menu_link nul">WOMEN</a></li>
+                    <li class="menu_list"><a href="test.html" class="menu_link nul">MAN</a>
+                        <!--выпадающее-->
+                        <div class="menu_mega_header">
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <li><a href="test.html">Blazers</a></li>
+                                    <li><a href="test.html">Denim</a></li>
+                                    <li><a href="test.html">Leggings/Pants</a></li>
+                                    <li><a href="test.html">Skirts/Shorts</a></li>
+                                    <li><a href="test.html">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <h3 class="menu_mega_list_header">Women</h3>
+                                    <li><a href="test.html">Blazers</a></li>
+                                    <li><a href="test.html">Denim</a></li>
+                                    <li><a href="test.html">Leggings/Pants</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <a href="test.html" class="nul">
+                                        <!--картинка-->
+                                        <div class="menu_mega_list_sale">
+                                            <p class="menu_mega_list_sale_text">super sale!</p>
+                                        </div>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu_list"><a href="test.html" class="menu_link nul">WOMEN</a>
+                        <!--выпадающее-->
+                        <div class="menu_mega_header">
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <li><a href="test.html">Blazers</a></li>
+                                    <li><a href="test.html">Denim</a></li>
+                                    <li><a href="test.html">Leggings/Pants</a></li>
+                                    <li><a href="test.html">Skirts/Shorts</a></li>
+                                    <li><a href="test.html">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <h3 class="menu_mega_list_header">Women</h3>
+                                    <li><a href="test.html">Blazers</a></li>
+                                    <li><a href="test.html">Denim</a></li>
+                                    <li><a href="test.html">Leggings/Pants</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <a href="test.html" class="nul">
+                                        <!--картинка-->
+                                        <div class="menu_mega_list_sale">
+                                            <p class="menu_mega_list_sale_text">super sale!</p>
+                                        </div>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                     <li class="menu_list"><a href="test.html" class="menu_link nul">KIDS</a>
+                        <!--выпадающее-->
                         <div class="menu_mega_header">
-                            <!--выпадающее-->
+
                             <div class="menu_mega_list">
                                 <!--столбцы-->
                                 <h3 class="menu_mega_list_header">Women</h3>
@@ -229,18 +339,166 @@
                             </div>
                         </div>
                     </li>
-                    <li class="menu_list"><a href="test.html" class="menu_link nul">ACCESORIES</a></li>
-                    <li class="menu_list"><a href="test.html" class="menu_link nul">FEATURED</a></li>
-                    <li class="menu_list"><a href="test.html" class="menu_link nul">HOT DEALS</a></li>
+                    <li class="menu_list"><a href="test.html" class="menu_link nul">ACCESORIES</a>
+                        <!--выпадающее-->
+                        <div class="menu_mega_header">
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <li><a href="test.html">Blazers</a></li>
+                                    <li><a href="test.html">Denim</a></li>
+                                    <li><a href="test.html">Leggings/Pants</a></li>
+                                    <li><a href="test.html">Skirts/Shorts</a></li>
+                                    <li><a href="test.html">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <h3 class="menu_mega_list_header">Women</h3>
+                                    <li><a href="test.html">Blazers</a></li>
+                                    <li><a href="test.html">Denim</a></li>
+                                    <li><a href="test.html">Leggings/Pants</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <a href="test.html" class="nul">
+                                        <!--картинка-->
+                                        <div class="menu_mega_list_sale">
+                                            <p class="menu_mega_list_sale_text">super sale!</p>
+                                        </div>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu_list"><a href="test.html" class="menu_link nul">FEATURED</a>
+                        <!--выпадающее-->
+                        <div class="menu_mega_header">
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <li><a href="test.html">Blazers</a></li>
+                                    <li><a href="test.html">Denim</a></li>
+                                    <li><a href="test.html">Leggings/Pants</a></li>
+                                    <li><a href="test.html">Skirts/Shorts</a></li>
+                                    <li><a href="test.html">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <h3 class="menu_mega_list_header">Women</h3>
+                                    <li><a href="test.html">Blazers</a></li>
+                                    <li><a href="test.html">Denim</a></li>
+                                    <li><a href="test.html">Leggings/Pants</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <a href="test.html" class="nul">
+                                        <!--картинка-->
+                                        <div class="menu_mega_list_sale">
+                                            <p class="menu_mega_list_sale_text">super sale!</p>
+                                        </div>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu_list"><a href="test.html" class="menu_link nul">HOT DEALS</a>
+                        <!--выпадающее-->
+                        <div class="menu_mega_header">
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <li><a href="test.html">Blazers</a></li>
+                                    <li><a href="test.html">Denim</a></li>
+                                    <li><a href="test.html">Leggings/Pants</a></li>
+                                    <li><a href="test.html">Skirts/Shorts</a></li>
+                                    <li><a href="test.html">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <h3 class="menu_mega_list_header">Women</h3>
+                                    <li><a href="test.html">Blazers</a></li>
+                                    <li><a href="test.html">Denim</a></li>
+                                    <li><a href="test.html">Leggings/Pants</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_mega_list">
+                                <!--столбцы-->
+                                <h3 class="menu_mega_list_header">Women</h3>
+                                <ul class="menu_mega_link">
+                                    <li><a href="test.html">Dresses</a></li>
+                                    <li><a href="test.html">Tops</a></li>
+                                    <li><a href="test.html">Sweaters/Knits</a></li>
+                                    <li><a href="test.html">Jackets/Coats</a></li>
+                                    <a href="test.html" class="nul">
+                                        <!--картинка-->
+                                        <div class="menu_mega_list_sale">
+                                            <p class="menu_mega_list_sale_text">super sale!</p>
+                                        </div>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </menu>
             <!-- Слайдер с текстом -->
             <div class="slider">
-                <div class="slider_text">
-                    <img src="img/rectangle.png" alt="" class="slider_rectangle">
-                    <p class="slider_upper_text">THE BRAND</p>
-                    <p class="slider_lower_text">OF LUXERIOUS <span class="slider_word">FASHION</span></p>
-
+                <div class="banner main_container">
+                    <div class="slider_text">
+                        <img src="img/rectangle.png" alt="" class="slider_rectangle">
+                        <p class="slider_upper_text">THE BRAND</p>
+                        <p class="slider_lower_text">OF LUXERIOUS <span class="slider_word">FASHION</span></p>
+                    </div>
                 </div>
             </div>
 
@@ -293,78 +551,134 @@
                     </div>
                     <!-- Витрина товаров -->
                     <div class="good_box_big">
+                        <!-- Карточка товара -->
                         <div class="goods_box">
                             <a href="test.html">
-                                <!-- ????? -->
-                                <!-- <img src="img/background.png" alt="Корзина"> -->
-
-                                <img src="img/goods1.jpg" alt="Футболка">
-
-
-                                <p class="goods_cart">Add to cart</p>
-                                <p class="goods_cart_border"></p>
-
-
-
-                                <p class="goods_box_upper_font">Mango People T-shirt</p>
-                                <p class="goods_box_lower_font">$52.00</p>
+                                <figure>
+                                    <img src="img/goods1.jpg" alt="Товар">
+                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
+                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
+                                </figure>
                             </a>
+                            <div class="goods_cart">
+                                <a href="test.html" class="goods_cart_a">
+                                    <img src="img/cartw.png" alt="" class="goods_cart_right">
+                                    <p>Add to cart</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="goods_box">
                             <a href="test.html">
-                                <img src="img/goods2.jpg" alt="Футболка">
-                                <p class="goods_box_upper_font">Mango People T-shirt</p>
-                                <p class="goods_box_lower_font">$52.00</p>
+                                <figure>
+                                    <img src="img/goods2.jpg" alt="Товар">
+                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
+                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
+                                </figure>
                             </a>
+                            <div class="goods_cart">
+                                <a href="test.html" class="goods_cart_a">
+                                    <img src="img/cartw.png" alt="" class="goods_cart_right">
+                                    <p>Add to cart</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="goods_box">
                             <a href="test.html">
-                                <img src="img/goods3.jpg" alt="Футболка">
-                                <p class="goods_box_upper_font">Mango People T-shirt</p>
-                                <p class="goods_box_lower_font">$52.00</p>
+                                <figure>
+                                    <img src="img/goods3.jpg" alt="Товар">
+                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
+                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
+                                </figure>
                             </a>
+                            <div class="goods_cart">
+                                <a href="test.html" class="goods_cart_a">
+                                    <img src="img/cartw.png" alt="" class="goods_cart_right">
+                                    <p>Add to cart</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="goods_box">
                             <a href="test.html">
-                                <img src="img/goods4.jpg" alt="Футболка">
-                                <p class="goods_box_upper_font">Mango People T-shirt</p>
-                                <p class="goods_box_lower_font">$52.00</p>
+                                <figure>
+                                    <img src="img/goods4.jpg" alt="Товар">
+                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
+                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
+                                </figure>
                             </a>
+                            <div class="goods_cart">
+                                <a href="test.html" class="goods_cart_a">
+                                    <img src="img/cartw.png" alt="" class="goods_cart_right">
+                                    <p>Add to cart</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="goods_box">
                             <a href="test.html">
-                                <img src="img/goods5.jpg" alt="Футболка">
-                                <p class="goods_box_upper_font">Mango People T-shirt</p>
-                                <p class="goods_box_lower_font">$52.00</p>
+                                <figure>
+                                    <img src="img/goods5.jpg" alt="Товар">
+                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
+                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
+                                </figure>
                             </a>
+                            <div class="goods_cart">
+                                <a href="test.html" class="goods_cart_a">
+                                    <img src="img/cartw.png" alt="" class="goods_cart_right">
+                                    <p>Add to cart</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="goods_box">
                             <a href="test.html">
-                                <img src="img/goods6.jpg" alt="Футболка">
-                                <p class="goods_box_upper_font">Mango People T-shirt</p>
-                                <p class="goods_box_lower_font">$52.00</p>
+                                <figure>
+                                    <img src="img/goods6.jpg" alt="Товар">
+                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
+                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
+                                </figure>
                             </a>
+                            <div class="goods_cart">
+                                <a href="test.html" class="goods_cart_a">
+                                    <img src="img/cartw.png" alt="" class="goods_cart_right">
+                                    <p>Add to cart</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="goods_box">
                             <a href="test.html">
-                                <img src="img/goods7.jpg" alt="Футболка">
-                                <p class="goods_box_upper_font">Mango People T-shirt</p>
-                                <p class="goods_box_lower_font">$52.00</p>
+                                <figure>
+                                    <img src="img/goods7.jpg" alt="Товар">
+                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
+                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
+                                </figure>
                             </a>
+                            <div class="goods_cart">
+                                <a href="test.html" class="goods_cart_a">
+                                    <img src="img/cartw.png" alt="" class="goods_cart_right">
+                                    <p>Add to cart</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="goods_box">
                             <a href="test.html">
-                                <img src="img/goods8.jpg" alt="Футболка">
-                                <p class="goods_box_upper_font">Mango People T-shirt</p>
-                                <p class="goods_box_lower_font">$52.00</p>
+                                <figure>
+                                    <img src="img/goods8.jpg" alt="Товар">
+                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
+                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
+                                </figure>
                             </a>
+                            <div class="goods_cart">
+                                <a href="test.html" class="goods_cart_a">
+                                    <img src="img/cartw.png" alt="" class="goods_cart_right">
+                                    <p>Add to cart</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <!-- Смотреть весь каталог -->
                 <div class="goods_button_box">
                     <a href="test.html" class="">
-                        <button class="goods_button">Browse All Product</button>
+                        <button class="goods_button">Browse All Product&#160&#160<i
+                                class="fas fa-long-arrow-alt-right"></i></button>
                     </a>
                 </div>
 
@@ -433,8 +747,8 @@
                             <p class="subscribe_action_lower_text">FOR OUR NEWLETTER AND PROMOTION</p>
                             <form action="#" method="post">
                                 <input class="subscribe_mail" type="email" name="email" id=""
-                                    placeholder="Enter Your Email">
-                                <input class="subscribe_button" type="submit" value="Subscribe">
+                                    placeholder="Enter Your Email"><input class="subscribe_button" type="submit"
+                                    value="Subscribe">
                             </form>
                         </div>
                     </div>
@@ -498,21 +812,22 @@
                     <div>
                         <p class="copyright">&copy; 2017 Brand All Rights Reserved.</p>
                     </div>
+                    <!-- Иконки соцгрупп -->
                     <menu class="social_list">
                         <a href="test.html">
-                            <p>f</p>
+                            <p class="social_list_icon"><i class="fab fa-facebook-f"></i></p>
                         </a>
                         <a href="test.html">
-                            <p id="twitter">00</p>
+                            <p class="social_list_icon"><i class="fab fa-twitter twitter"></i></p>
                         </a>
                         <a href="test.html">
-                            <p>in</p>
+                            <p class="social_list_icon"><i class="fab fa-linkedin-in"></i></p>
                         </a>
                         <a href="test.html">
-                            <p>P</p>
+                            <p class="social_list_icon"><i class="fab fa-pinterest-p"></i></p>
                         </a>
                         <a href="test.html">
-                            <p>G</p>
+                            <p class="social_list_icon"><i class="fab fa-google-plus-g"></i></p>
                         </a>
                     </menu>
                 </div>
