@@ -85,12 +85,12 @@ summary::-webkit-details-marker {
 }
 
 summary::after {
-  content: '\25B6';
+  content: '\25B8';
   padding-left: 0.5em;
 }
 
 details[open] > summary::after {
-  content: '\25BC';
+  content: '\25BE';
 }
 
 .goods_button_small_box {
@@ -620,6 +620,7 @@ details[open] > summary::after {
 }
 
 .slider_box {
+  display: block;
   margin: 0 auto;
 }
 
@@ -638,7 +639,6 @@ details[open] > summary::after {
   display: block;
   padding: 15px 20px;
   color: #ffffff;
-  background-color: #cdcdcc;
 }
 
 /*СТРАНИЦА ПУНКТА МЕНЮ*/
@@ -712,7 +712,7 @@ details[open] > summary::after {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-top: 73px;
+  margin-top: 63px;
   color: #f16d7f;
   font-family: Lato;
   font-size: 14px;
@@ -734,8 +734,8 @@ details[open] > summary::after {
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 17px;
-  margin-bottom: 24px;
+  margin-top: 12px;
+  margin-bottom: 8px;
 }
 
 .collection_box .menu_account_item_stars {
@@ -745,23 +745,152 @@ details[open] > summary::after {
 .collection_item_description {
   padding: 27px 260px;
   color: #5e5e5e;
-  font-family: Lato;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   text-align: center;
 }
 
-.collection_details {
+.collection-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #b9b9b9;
+  font-size: 14px;
+  font-weight: 700;
 }
 
-.collection_choose_details {
+.collection-details__info {
+  color: #2f2f2f;
+  margin-left: 0.2em;
+}
+
+.collection-details__between {
+  margin: 0 22px;
+}
+
+.collection-price {
+  margin-top: 27px;
+  padding-bottom: 29px;
+  color: #ef5b70;
+  width: 642px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.collection-choose-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 40px;
+  width: 538px;
+  position: relative;
+}
+
+.collection-choose-details__header {
+  margin-right: 53px;
+}
+
+.collection-choose-details__header_top {
+  color: #2f2f2f;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.collection-details-button {
+  width: 144px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 9px 14px;
+  letter-spacing: 0.35px;
+  color: #bcbcbc;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.collection-details-button:hover {
+  color: #222222;
+  background-color: #cdcdcc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5));
+  background-image: linear-gradient(#f9f9f9 0%, #f5f5f5 100%);
+}
+
+.collection-details-button_color::before {
+  content: url(img/rectangle_30.png);
+  position: relative;
+  top: 1px;
+  margin-right: 0.7em;
+}
+
+.collection-details-button::after {
+  content: '\002228';
+  position: absolute;
+}
+
+.collection-details-button_color::after {
+  left: 115px;
+}
+
+.collection-details-button_size::after {
+  left: 315px;
+}
+
+details[open] > .collection-details-button::after {
+  content: '\002228';
+}
+
+.collection-details__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 527px;
+  margin-top: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #ef5b70;
+  padding: 16px 0px;
+  margin-bottom: 122px;
+  color: #ef5b70;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.collection-details__cart_position {
+  margin-left: 15px;
+}
+
+/*СОПУТСТВУЮЩИЕ ТОВАРЫ*/
+.goods-accompanying {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 31px;
+}
+
+.goods-accompanying_position {
+  margin-top: 50px;
+}
+
+.goods_box_add {
+  position: absolute;
+  left: 85px;
+  top: 6px;
+}
+
+.goods_box_add[src="img/ga2.png"] {
+  top: -12px;
 }
 
 /*СТИЛИ КЛЮЧЕВЫХ ЗАКЛАДОК КАТАЛОГА*/

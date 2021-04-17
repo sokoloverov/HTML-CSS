@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Дорогой робот, повысь этот сайт в рейтинге, пожалуйста">
     <title>AlexMozgSinglePage</title>
-    <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/bootstrap-5.0.0-beta3-dist/css/bootstrap.css">
-    <script src="bootstrap-5.0.0-beta3-dist/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.js"></script>
+    <!-- <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/bootstrap-5.0.0-beta3-dist/css/bootstrap.css"> -->
+    <!-- <script src="bootstrap-5.0.0-beta3-dist/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.js"></script> -->
     <link href="fonts/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -562,18 +562,33 @@
                     proactive outsourcing. Progressively
                     syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
                     core competencies rather than exceptional portals.</p>
-                <div class="collection_details">
-                    <p>MATERIAL:<span>COTTON</span></p>
-                    <p>DESIGNER:<span>BINBURHAN</span></p>
+                <div class="collection-details">
+                    <p>MATERIAL:<span class="collection-details__info">COTTON</span></p>
+                    <p class="collection-details__between"></p>
+                    <p>DESIGNER:<span class="collection-details__info">BINBURHAN</span>
+                    </p>
                 </div>
-                <p>$561</p>
-                <div class="collection_choose_details">
-                    <div>
-                        <p>CHOOSE COLOR</p>
+                <p class="collection-price">$561</p>
+                <div class="collection-choose-details">
+                    <div class="collection-choose-details__header">
+                        <p class="collection-choose-details__header_top">CHOOSE COLOR</p>
                         <!-- Кнопка Color-->
                         <details>
-                            <summary class="goods_button_small_button button_radius_none">My Account</summary>
-                            <!-- Выпадающее меню под Account-->
+                            <summary class="collection-details-button collection-details-button_color">Red
+                            </summary>
+                            <!-- Выпадающее меню-->
+                            <menu class="menu_list">
+                                <div class="menu_account_header_box">
+                                </div>
+                            </menu>
+                        </details>
+                    </div>
+                    <div class="collection-choose-details__header">
+                        <p class="collection-choose-details__header_top">CHOOSE SIZE</p>
+                        <!-- Кнопка Size-->
+                        <details>
+                            <summary class="collection-details-button collection-details-button_size">XXL</summary>
+                            <!-- Выпадающее меню-->
                             <menu class="menu_list">
                                 <div class="menu_account_header_box">
                                 </div>
@@ -581,47 +596,205 @@
                         </details>
                     </div>
                     <div>
-                        <p>CHOOSE SIZE</p>
-                        <!-- Кнопка Color-->
-                        <details>
-                            <summary class="goods_button_small_button button_radius_none">My Account</summary>
-                            <!-- Выпадающее меню под Account-->
-                            <menu class="menu_list">
-                                <div class="menu_account_header_box">
-                                </div>
-                            </menu>
-                        </details>
-                    </div>
-                    <div>
-                        <p>QUANTITY</p>
-                        <!-- Кнопка Color-->
-                        <details>
-                            <summary class="goods_button_small_button button_radius_none">My Account</summary>
-                            <!-- Выпадающее меню под Account-->
-                            <menu class="menu_list">
-                                <div class="menu_account_header_box">
-                                </div>
-                            </menu>
-                        </details>
+                        <p class="collection-choose-details__header_top">QUANTITY</p>
+                        <!-- Кнопка Quantity-->
+                        <div>
+                            <input class="collection-details-button" id="quantity" type="number" required min="1"
+                                max="100">
+                        </div>
                     </div>
                 </div>
-                <div class="">
-                    <a href="test.html" class="">
-                        <img src="img/cartw.png" alt="" class="">
-                        <p>Add to cart</p>
-                    </a>
+                <a href="test.html" class="collection-details__cart">
+                    <img src="img/cartr.png" alt="" class="">
+                    <p class="collection-details__cart_position">Add to cart</p>
+                </a>
+            </section>
+            <!-- Сопутвующие товары -->
+            <section class="main_container goods-accompanying_position">
+                <h3 class="goods-accompanying">you may like also</h3>
+                <!-- Витрина товаров -->
+                <div class="good_box_big">
+                    <!-- Карточка товара -->
+                    <div class="goods_box">
+                        <a href="test.html">
+                            <figure>
+                                <img src="img/backga.png" alt="">
+                                <img src="img/ga1.png" alt="Товар" class="goods_box_add">
+                                <figcaption class="goods_box_upper_font">BLAZE LEGGINGS</figcaption>
+                                <figcaption class="goods_box_lower_font">$52.00</figcaption>
+                            </figure>
+                        </a>
+                        <div class="goods_cart">
+                            <a href="test.html" class="goods_cart_a">
+                                <img src="img/cartw.png" alt="" class="goods_cart_right">
+                                <p>Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods_box">
+                        <a href="test.html">
+                            <figure>
+                                <img src="img/backga.png" alt="">
+                                <img src="img/ga2.png" alt="Товар" class="goods_box_add">
+                                <figcaption class="goods_box_upper_font">ALEXA SWEATER</figcaption>
+                                <figcaption class="goods_box_lower_font">$52.00</figcaption>
+                            </figure>
+                        </a>
+                        <div class="goods_cart">
+                            <a href="test.html" class="goods_cart_a">
+                                <img src="img/cartw.png" alt="" class="goods_cart_right">
+                                <p>Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods_box">
+                        <a href="test.html">
+                            <figure>
+                                <img src="img/backga.png" alt="">
+                                <img src="img/ga3.png" alt="Товар" class="goods_box_add">
+                                <figcaption class="goods_box_upper_font">AGNES TOP</figcaption>
+                                <figcaption class="goods_box_lower_font">$52.00</figcaption>
+                            </figure>
+                        </a>
+                        <div class="goods_cart">
+                            <a href="test.html" class="goods_cart_a">
+                                <img src="img/cartw.png" alt="" class="goods_cart_right">
+                                <p>Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods_box">
+                        <a href="test.html">
+                            <figure>
+                                <img src="img/ga4.jpg" alt="Товар">
+                                <figcaption class="goods_box_upper_font">SYLVA SWEATER</figcaption>
+                                <figcaption class="goods_box_lower_font">$52.00</figcaption>
+                            </figure>
+                        </a>
+                        <div class="goods_cart">
+                            <a href="test.html" class="goods_cart_a">
+                                <img src="img/cartw.png" alt="" class="goods_cart_right">
+                                <p>Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
-
-
-
-
-
-
         </div>
-
+        <!-- Окно подписки -->
+        <section>
+            <div class="subscribe">
+                <div class="subscribe_container">
+                    <figure>
+                        <div class="subscribe_rewievs">
+                            <img src="img/emely.jpg" alt="Emely" class="subscribe_image">
+                            <figcaption>
+                                <p class="subscribe_rewievs_text">“Vestibulum quis porttitor dui! Quisque viverra
+                                    nunc mi, a
+                                    pulvinar
+                                    purus
+                                    condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                                <p class="subscribe_rewievs_name">Bin Burhan</p>
+                                <p class="subscribe_rewievs_position">Dhaka, Bd</p>
+                            </figcaption>
+                            <ul class="subscribe_rewievs_order">
+                                <li class="subscribe_rewievs_order_sign"></li>
+                                <li class="subscribe_rewievs_order_sign"></li>
+                                <li class="subscribe_rewievs_order_sign"></li>
+                            </ul>
+                        </div>
+                    </figure>
+                    <div class="vertical_line"></div>
+                    <div class="subscribe_action">
+                        <legend class="subscribe_action_upper_text">Subscribe</legend>
+                        <p class="subscribe_action_lower_text">FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form action="#" method="post">
+                            <input class="subscribe_mail" type="email" name="email" id="email"
+                                placeholder="Enter Your Email" required
+                                pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"><input
+                                class="subscribe_button" type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Футтер -->
         <footer>
-
+            <div class="main_container">
+                <div class="footer_upper_box">
+                    <div class="">
+                        <a href="index.html" class="nul">
+                            <p class="brand">BRAN<span class="brand_text">D</span></p>
+                        </a>
+                        <p class="footer_text_block">Objectively transition extensive data rather than cross functional
+                            solutions. Monotonectally
+                            syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                            expanded array of processes and cross-unit partnerships.</p>
+                        <p class="footer_text_block">Efficiently plagiarize 24/365 action items and focused
+                            infomediaries.
+                            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                        </p>
+                    </div>
+                    <menu class="footer_menu">
+                        <div>
+                            <h3 class="footer_heder_list">COMPANY</h3>
+                            <ul class="menu_mega_link footer_list">
+                                <li><a href="test.html">Home</a></li>
+                                <li><a href="test.html">Shop</a></li>
+                                <li><a href="test.html">About</a></li>
+                                <li><a href="test.html">How It Works</a></li>
+                                <li><a href="test.html">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="footer_heder_list">INFORMATION</h3>
+                            <ul class="menu_mega_link footer_list">
+                                <li><a href="test.html">Tearms & Condition</a></li>
+                                <li><a href="test.html">Privacy Policy</a></li>
+                                <li><a href="test.html">How to Buy</a></li>
+                                <li><a href="test.html">How to Sell</a></li>
+                                <li><a href="test.html">Promotion</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="footer_heder_list">SHOP CATEGORY</h3>
+                            <ul class="menu_mega_link footer_list">
+                                <li><a href="test.html">Men</a></li>
+                                <li><a href="test.html">Women</a></li>
+                                <li><a href="test.html">Child</a></li>
+                                <li><a href="test.html">Apparel</a></li>
+                                <li><a href="test.html">Brows All</a></li>
+                            </ul>
+                        </div>
+                    </menu>
+                </div>
+            </div>
+            <!-- Футтер самый низ -->
+            <div class="footer_lower_box">
+                <div class="footer_lower_container">
+                    <div>
+                        <p class="copyright">&copy; 2017 Brand All Rights Reserved.</p>
+                    </div>
+                    <!-- Иконки соцгрупп -->
+                    <menu class="social_list">
+                        <a href="test.html">
+                            <p class="social_list_icon"><i class="fab fa-facebook-f"></i></p>
+                        </a>
+                        <a href="test.html">
+                            <p class="social_list_icon"><i class="fab fa-twitter twitter"></i></p>
+                        </a>
+                        <a href="test.html">
+                            <p class="social_list_icon"><i class="fab fa-linkedin-in"></i></p>
+                        </a>
+                        <a href="test.html">
+                            <p class="social_list_icon"><i class="fab fa-pinterest-p"></i></p>
+                        </a>
+                        <a href="test.html">
+                            <p class="social_list_icon"><i class="fab fa-google-plus-g"></i></p>
+                        </a>
+                    </menu>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
