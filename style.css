@@ -156,6 +156,11 @@ details[open] > summary::after {
   border-right: none;
 }
 
+.header_search_form:focus-visible {
+  background-color: #ffffff;
+  color: #080808;
+}
+
 .icon_color {
   color: #a4a4a4;
 }
@@ -849,7 +854,7 @@ details[open] > .collection-details-button::after {
   display: -ms-flexbox;
   display: flex;
   width: 527px;
-  margin-top: 24px;
+  margin-top: 28px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -880,7 +885,7 @@ details[open] > .collection-details-button::after {
 }
 
 .goods-accompanying_position {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .goods_box_add {
@@ -1227,6 +1232,293 @@ details[open] > .collection-details-button::after {
   right: 75px;
 }
 
+/*ОКНО ОФОРМЛЕНИЯ КОРЗИНЫ*/
+.cartWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cartWindow_position {
+  margin-top: 90px;
+}
+
+.cartWindow__table_left {
+  margin-left: 9px;
+}
+
+.cartWindow__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  color: #656565;
+  font-size: 13px;
+  font-weight: 400;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.cartWindow__table_font {
+  color: #222222;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+}
+
+.cartWindow__table_bootlineHeader {
+  padding-bottom: 20px;
+}
+
+.cartWindow__table_pd {
+  width: 490.2px;
+}
+
+.cartWindow__table_up {
+  width: 136.8px;
+}
+
+.cartWindow__table_st {
+  width: 102.6px;
+}
+
+.cartWindow__table_bootlineGoods {
+  padding: 25px 0px;
+}
+
+.cartWindow__picture {
+  float: left;
+}
+
+.cartWindow__picture_rm {
+  margin-right: 21px;
+}
+
+.cartWindow__goodsName {
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.cartWindow__goodsName_md {
+  padding-top: 13px;
+  margin-bottom: 38px;
+}
+
+.cartWindow__goodsType {
+  list-style-type: none;
+  color: #575757;
+}
+
+.cartWindow__goodsType_value {
+  font-weight: 300;
+  margin-left: 0.5em;
+}
+
+.cartWindow__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cartWindow__info_price {
+  padding-left: 32px;
+}
+
+.cartWindow__quantity {
+  padding: 10px 20px;
+  border: 1px solid #eaeaea;
+}
+
+.cartWindow__info_quantity {
+  padding-left: 10px;
+}
+
+.cartWindow__info_shipping {
+  padding-left: 9px;
+}
+
+.cartWindow__info_action {
+  width: 34px;
+}
+
+.cartButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cartButtons_pos {
+  margin-top: 44px;
+  margin-bottom: 63px;
+}
+
+.cartButtons__button {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 38px;
+}
+
+/*ЗАПОЛНЕНИЕ ФОРМ КОРЗИНЫ*/
+.collection-details-button_country {
+  width: 335px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px 18px;
+  letter-spacing: 0.35px;
+  color: #bcbcbc;
+  font-size: 13px;
+  color: #b1b1b1;
+  font-weight: 300;
+}
+
+.collection-details-button_country:hover {
+  color: #222222;
+  background-color: #cdcdcc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5));
+  background-image: linear-gradient(#f9f9f9 0%, #f5f5f5 100%);
+}
+
+.collection-details-button_country::after {
+  content: '\25B8';
+  color: #bdbdbd;
+  position: absolute;
+  margin-left: 220px;
+}
+
+.details[open] > .collection-details-button_country::after {
+  content: '\25BE';
+}
+
+.formField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formField__header {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.formField__header_mb {
+  margin-bottom: 22px;
+}
+
+.formField__box {
+  display: block;
+  width: 335px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px 18px;
+  letter-spacing: 0.35px;
+  color: #bcbcbc;
+  font-size: 13px;
+  color: #b1b1b1;
+  font-weight: 300;
+}
+
+.formField__box:focus-visible {
+  background-color: #ffffff;
+  color: #080808;
+}
+
+.formField__box_mb {
+  margin-bottom: 20px;
+}
+
+.formField__smallHeader {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.formField__smallHeader_mb {
+  margin-bottom: 24px;
+}
+
+.goods_button_cart_small {
+  color: #4a4a4a;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 17px;
+}
+
+.checkoutForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 360px;
+  height: 214px;
+  background-color: #f5f3f3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40px 43px;
+}
+
+.checkoutForm__textsmall {
+  text-align: right;
+  color: #4a4a4a;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.checkoutForm__textsmall_lm {
+  margin-left: 1em;
+}
+
+.checkoutForm__textbig {
+  text-align: right;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 22px;
+  padding-top: 14px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.checkoutForm__textbig_lm {
+  margin-left: 1em;
+  color: #f16d7f;
+}
+
+.checkoutForm__textbig_bm {
+  margin-bottom: 17px;
+}
+
+.checkoutForm .goods_button {
+  text-transform: uppercase;
+}
+
 /*ОКНО ПОДПИСКИ*/
 /*Радостные клиенты*/
 .subscribe {
@@ -1356,6 +1648,11 @@ details[open] > .collection-details-button::after {
   letter-spacing: 0.35px;
   padding-left: 28px;
   outline: none;
+}
+
+.subscribe_mail:focus-visible {
+  background-color: #ffffff;
+  color: #080808;
 }
 
 /*КНОПКА ПОДПИСКИ*/
