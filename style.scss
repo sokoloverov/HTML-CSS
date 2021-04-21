@@ -6,10 +6,21 @@
 $carousel_height: 777px;
 $main-width: 1140px;
 
-
+@font-face {
+  font-family: Lato-Black;
+  src: url(fonts/Lato/Lato-Black.ttf);
+}
+@font-face {
+  font-family: Lato;
+  src: url(fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-Bold;
+  src: url(fonts/Lato/Lato-Bold.ttf);
+}
 
 body {  
-    font-family:'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lato', 'Lato-Black', 'Lato-Bold', 'Segoe UI', Tahoma, Verdana, sans-serif;
   }
 .main_container {
   max-width: $main-width;
@@ -92,6 +103,7 @@ details[open] > summary::after {
 }
 .goods_button_small_button:hover {
   color: #222222;
+  cursor: pointer;
   background-color: #cdcdcc;
   background-image: linear-gradient(#f9f9f9 0%, #f5f5f5 100%);
 }
@@ -311,7 +323,7 @@ top: 3px;
 }
 .my_checkout button {
   color: #ffffff;
-  font-family: "Lato - Black";
+  font-family: "Lato-Black";
   font-size: 22px;
   font-weight: 400;
   text-transform: uppercase;
@@ -330,6 +342,7 @@ top: 3px;
 }
 .goods_button_cart:hover {
     box-shadow: 0 0 10px #cdcdcc;
+    cursor: pointer;
 }
 .my_cart {
   color: #4a4a4a;
@@ -460,7 +473,7 @@ margin-top: 13px;
   float: left;
   margin-right: 12px;
   position: relative;
-  top: 21px;
+  top: 13px;
 }
 .slider_upper_text {
   font-size: 60px;
@@ -511,16 +524,16 @@ margin-top: 13px;
     display: flex;
     align-items: center;
     color: #f16d7f;
-    //font-family: "Lato - Black";
+    font-family: "Lato-Black";
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 400;
     margin-left: 9px;
 }
 .breadcrumb {
     display: inline-flex;
     text-transform: uppercase;
     list-style-type: none;
-    //font-family: Lato;
+    font-family: Lato;
     font-size: 14px;
     font-weight: 300;
     color: #636363;
@@ -532,8 +545,8 @@ margin-top: 13px;
 }
 .active {
     padding-left: 0.2em;
-    font-weight: 700;
-    //font-family: "Lato - Bold";
+    font-weight: 400;
+    font-family: "Lato-Bold";
     color: #f16d7f;
 }
 /*ПОДРОБНАЯ КАРТОЧКА ТОВАРА*/
@@ -566,13 +579,13 @@ margin-top: 13px;
     left: 46px;
 }
 .collection_name {
- color: #4d4d4d;
-//font-family: "Lato - Black";
-font-size: 18px;
-font-weight: 400;
-text-transform: uppercase;
-margin-top: 12px;
-margin-bottom: 8px;
+  color: #4d4d4d;
+  font-family: "Lato-Black";
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 8px;
 }
 .collection_box .menu_account_item_stars{
     font-size: 18px;
@@ -580,7 +593,7 @@ margin-bottom: 8px;
 .collection_item_description {
     padding: 27px 260px;
     color: #5e5e5e;
-    //font-family: Lato;
+    font-family: Lato;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
@@ -589,7 +602,7 @@ margin-bottom: 8px;
 .collection-details {
     display: flex;
     color: #b9b9b9;
-    //font-family: Lato;
+    font-family: Lato;
     font-size: 14px;
     font-weight: 700;
   }
@@ -607,7 +620,7 @@ margin-bottom: 8px;
   color: #ef5b70;
   width: 642px;
   text-align: center;
-  //font-family: Lato;
+  font-family: Lato;
   font-size: 24px;
   font-weight: 700;
   border-bottom: 1px solid #eaeaea;
@@ -623,7 +636,7 @@ margin-bottom: 8px;
 }
 .collection-choose-details__header_top {
   color: #2f2f2f;
-//font-family: Lato;
+  font-family: Lato;
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 16px;
@@ -636,7 +649,7 @@ margin-bottom: 8px;
   padding: 9px 14px;
   letter-spacing: 0.35px;
   color: #bcbcbc;
-//font-family: Lato;
+  font-family: Lato;
   font-size: 13px;
   font-weight: 400;
 }
@@ -673,7 +686,7 @@ details[open] > .collection-details-button::after  {
   padding: 16px 0px;
   margin-bottom: 122px;
   color: #ef5b70;
-  //font-family: Lato;
+  font-family: Lato;
   font-size: 16px;
   font-weight: 700;
   align-items: center;
@@ -687,7 +700,7 @@ details[open] > .collection-details-button::after  {
   text-align: center;
   text-transform: uppercase;
   color: #4d4d4d;
-  //font-family: "Lato - Black";
+  font-family: "Lato-Black";
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 31px;
@@ -886,6 +899,7 @@ details[open] > .collection-details-button::after  {
   //border: 1px solid #e6e6e6;
   background-color: #cdcdcc;
   background-image: linear-gradient(#f9f9f9 0%, #f5f5f5 100%);
+  cursor: pointer;
   // margin-bottom: 2px;
 }
 /*ОФЕРТА*/
@@ -971,7 +985,7 @@ details[open] > .collection-details-button::after  {
   justify-content: space-between;
   list-style-type: none;
   color: #656565;
-  //font-family: Lato;
+  font-family: Lato;
   font-size: 13px;
   font-weight: 400;
   border-bottom: 1px solid #eaeaea;
@@ -1014,7 +1028,7 @@ margin-right: 21px;
 .cartWindow__goodsType {
   list-style-type: none;
   color: #575757;
-//font-family: "Lato - Regular";
+  font-family: "Lato";
 }
 .cartWindow__goodsType_value {
   font-weight: 300;
@@ -1051,7 +1065,7 @@ margin-right: 21px;
 }
 .cartButtons__button {
   color: #4a4a4a;
-  //font-family: Lato;
+  font-family: Lato;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1066,7 +1080,7 @@ margin-right: 21px;
   padding: 16px 18px;
   letter-spacing: 0.35px;
   color: #bcbcbc;
-//font-family: Lato;
+  font-family: Lato;
   font-size: 13px;
   color: #b1b1b1;
   font-weight: 300;
@@ -1092,7 +1106,7 @@ margin-right: 21px;
 }
 .formField__header {
   color: #222222;
-  //font-family: Lato;
+  font-family: Lato;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1109,7 +1123,7 @@ margin-right: 21px;
   padding: 16px 18px;
   letter-spacing: 0.35px;
   color: #bcbcbc;
-//font-family: Lato;
+  font-family: Lato;
   font-size: 13px;
   color: #b1b1b1;
   font-weight: 300;
@@ -1123,7 +1137,7 @@ margin-right: 21px;
 }
 .formField__smallHeader {
   color: #000000;
-//font-family: Lato;
+  font-family: Lato;
   font-size: 14px;
   font-weight: 300;
 }
@@ -1132,7 +1146,7 @@ margin-right: 21px;
 }
 .goods_button_cart_small {
   color: #4a4a4a;
-//font-family: Lato;
+  font-family: Lato;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1150,7 +1164,7 @@ margin-right: 21px;
 .checkoutForm__textsmall {
   text-align: right;
   color: #4a4a4a;
-  //font-family: Lato;
+  font-family: Lato;
   font-size: 11px;
   font-weight: 400;
 }
@@ -1160,7 +1174,7 @@ margin-right: 21px;
 .checkoutForm__textbig {
   text-align: right;
   color: #222222;
-  //font-family: Lato;
+  font-family: Lato;
   font-size: 16px;
   font-weight: 700;
   padding-bottom: 22px;
@@ -1309,6 +1323,7 @@ color: #222224;
 }
 .subscribe_button:hover {
   color: #222222;
+  cursor: pointer;
   border: 1px solid #e6e6e6;
   background-color: #cdcdcc;
   background-image: linear-gradient(#f9f9f9 0%, #f5f5f5 100%);
