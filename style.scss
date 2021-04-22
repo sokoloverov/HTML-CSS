@@ -5,6 +5,7 @@
 /*ПЕРЕМЕННЫЕ*/
 $carousel_height: 777px;
 $main-width: 1140px;
+$margin-bottom: 32px;
 
 @font-face {
   font-family: Lato-Black;
@@ -1192,6 +1193,125 @@ margin-right: 21px;
   text-transform: uppercase;
 }
 
+/*СТРАНИЦА ОФОРМЕНИЯ ЗАКАЗА*/
+.checkoutList {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e8e8e8;
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  list-style: none;
+}
+.checkoutList_mb {
+  margin-bottom: $margin-bottom;
+}
+.checkoutList_rp {
+  padding-right: 0.5em;
+}
+.checkoutList:last-of-type {
+  margin-bottom: 0px;
+}
+.login {
+  display: flex;
+  flex: 1;
+  color: #b3b2b2;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: none;
+}
+.guest {
+  width: 50%;
+}
+.guest__header {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.guest__header_mb {
+  margin-bottom: 15px;
+}
+.checkoutList_mbopen {
+  margin-bottom: 39px;
+}
+.guest__subtite_mb {
+  margin-bottom: 33px;
+}
+.guest__subtite_mbsmall {
+  margin-bottom: 27px;
+}
+.guest__subtite_before::before {
+  content: '\00BB';
+  padding-right: 0.2em;
+}
+.goods_button_cart_small_guest {
+  min-width: 180px;
+  padding: 19px 54px;
+  margin-top: 38px;
+  margin-bottom: 47px;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+}
+.guest__verification {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.checkbox-round {
+  margin-right: 1em;
+  vertical-align: text-bottom;
+  cursor: pointer;
+}
+.guest__header_st {
+  font-size: 12px;
+}
+.guest__verification_list {
+  padding-bottom: 20px
+}
+.guest__verification_mb {
+  margin-bottom: $margin-bottom;
+}
+.guest__verification_star {
+  color: #ff0d0d;
+  font-family: Lato;
+  font-size: 17px;
+  font-weight: 400;
+  padding-left: 0.1em;
+  vertical-align: middle;
+}
+.registerBox {
+min-width: 390px;
+height: 45px;
+border: 1px solid #eaeaea;
+background-color: #ffffff;
+padding-left: 10px;
+font-size: 14px;
+}
+.registerBox_mb {
+  margin-bottom: 20px;
+}
+.guest__subtite_red {
+  color: #ff0d0d;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: none;
+}
+.goods_button_cart_small_guest_mt {
+  margin-top: 31px;
+  float: left;
+}
+.guest__subtite_remind {
+  position: relative;
+  top: 55px;
+  left: 32px;
+}
 
 
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Дорогой робот, повысь этот сайт в рейтинге, пожалуйста">
-    <title>AlexMozgShoppingCart</title>
+    <title>AlexMozgCheckout</title>
     <!-- <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/bootstrap-5.0.0-beta3-dist/css/bootstrap.css"> -->
     <!-- <script src="bootstrap-5.0.0-beta3-dist/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.js"></script> -->
     <link href="fonts/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
@@ -516,148 +516,71 @@
                     </div>
                 </div>
             </section>
-            <!-- Корзина: содержание и заказ -->
-            <section class="main_container cartWindow cartWindow_position">
-                <div class="cartWindow__table_left">
-                    <!-- Корзина: содержание -->
-                    <!-- Корзина: заголовок -->
-                    <ul class="cartWindow__table cartWindow__table_font cartWindow__table_bootlineHeader">
-                        <li class="cartWindow__table_pd">Product&nbsp;Details</li>
-                        <li class="cartWindow__table_up">unite Price</li>
-                        <li class="cartWindow__table_up">Quantity</li>
-                        <li class="cartWindow__table_up">shipping</li>
-                        <li class="cartWindow__table_st">Subtotal</li>
-                        <li>ACTION</li>
-                    </ul>
-                    <!-- Корзина: типовая строка с продуктом -->
-                    <ul class="cartWindow__table cartWindow__table_bootlineGoods">
-                        <li class="cartWindow__table_pd">
-                            <div>
-                                <a href="test.html">
-                                    <img src="img/cart_goods1.png" alt="Товар в корзине"
-                                        class="cartWindow__picture cartWindow__picture_rm">
-                                </a>
-                                <p class="cartWindow__goodsName cartWindow__goodsName_md">Mango People T-shirt</p>
-                                <ul class="cartWindow__goodsType">
-                                    <li>Color:<span class="cartWindow__goodsType_value">Red</span></li>
-                                    <li>Size:<span class="cartWindow__goodsType_value">Xll</span></li>
-                                </ul>
+            <!-- Шесть пунктов оформления заказа -->
+            <section class="main_container cartWindow ">
+                <ul class="cartWindow_position">
+                    <li class="checkoutList checkoutList_mb">
+                        <p class="checkoutList_mbopen"><span class="checkoutList_rp">01.</span>Shipping Adress</p>
+                        <div class="login">
+                            <div class="guest">
+                                <p class="guest__header guest__header_mb">Check as a guest or register</p>
+                                <p class="guest__subtite_mb">Register with us for future convenience</p>
+                                <form action="#">
+                                    <fieldset class="guest__verification guest__header guest__header_st">
+                                        <label class="guest__verification_list" for="guest"><input
+                                                class="checkbox-round" name="guest" type="radio" value="guest">checkout
+                                            as
+                                            guest</label>
+                                        <label class="guest__verification_mb" for="register"><input
+                                                class="checkbox-round" name="guest" type="radio" value="register"
+                                                checked>register</label>
+                                    </fieldset>
+                                </form>
+                                <p class="guest__header guest__header_mb">register and save time!</p>
+                                <p class="guest__subtite_mb">Register with us for future convenience</p>
+                                <p class="guest__header_mb guest__subtite_before">Fast and easy checkout</p>
+                                <p class="guest__subtite_before">Easy access to your order history and status</p>
+                                <input type="button" value="Continue"
+                                    class="goods_button_cart goods_button_cart_small goods_button_cart_small_guest">
                             </div>
-                        </li>
-                        <li class="cartWindow__table_up cartWindow__info cartWindow__info_price">$150</li>
-                        <li class="cartWindow__table_up cartWindow__info cartWindow__info_quantity">
-                            <p class="cartWindow__quantity">2</p>
-                        </li>
-                        <li class="cartWindow__table_up cartWindow__info cartWindow__info_shipping">FREE</li>
-                        <li class="cartWindow__table_st cartWindow__info cartWindow__info_shipping">$300</li>
-                        <li class="cartWindow__info cartWindow__info_action">
-                            <a href="test.html" class="nul menu_account_item_cros">
-                                <p class="menu_account_item_dot"><i class="fas fa-times-circle"></i></p>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Корзина: типовая строка с продуктом -->
-                    <ul class="cartWindow__table cartWindow__table_bootlineGoods">
-                        <li class="cartWindow__table_pd">
                             <div>
-                                <a href="test.html">
-                                    <img src="img/cart_goods2.png" alt="Товар в корзине"
-                                        class="cartWindow__picture cartWindow__picture_rm">
-                                </a>
-                                <p class="cartWindow__goodsName cartWindow__goodsName_md">Mango People T-shirt</p>
-                                <ul class="cartWindow__goodsType">
-                                    <li>Color:<span class="cartWindow__goodsType_value">Red</span></li>
-                                    <li>Size:<span class="cartWindow__goodsType_value">Xll</span></li>
-                                </ul>
+                                <p class="guest__header guest__header_mb">Already registed?</p>
+                                <p class="guest__subtite_mbsmall">Please log in below</p>
+                                <form action="#">
+                                    <fieldset class="guest__verification guest__header guest__header_st">
+                                        <label class="guest__header_mb" for="email">EMAIL ADDRESS<span
+                                                class="guest__verification_star">*</span></label><input
+                                            class="registerBox registerBox_mb" type="email" name="email" id="email"
+                                            required>
+                                        <label class="guest__header_mb" for="password">PASSWORD<span
+                                                class="guest__verification_star">*</span></label><input
+                                            class="registerBox registerBox_mb" type="password" name="password"
+                                            id="password" required>
+                                        <p class="guest__subtite_red">*&nbsp;Required Fileds</p>
+                                    </fieldset>
+                                </form>
+                                <input type="button" value="Log in"
+                                    class="goods_button_cart goods_button_cart_small goods_button_cart_small_guest goods_button_cart_small_guest_mt">
+                                <p class="guest__subtite_remind">Forgot Password ?</p>
                             </div>
-                        </li>
-                        <li class="cartWindow__table_up cartWindow__info cartWindow__info_price">$150</li>
-                        <li class="cartWindow__table_up cartWindow__info cartWindow__info_quantity">
-                            <p class="cartWindow__quantity">2</p>
-                        </li>
-                        <li class="cartWindow__table_up cartWindow__info cartWindow__info_shipping">FREE</li>
-                        <li class="cartWindow__table_st cartWindow__info cartWindow__info_shipping">$300</li>
-                        <li class="cartWindow__info cartWindow__info_action">
-                            <a href="test.html" class="nul menu_account_item_cros">
-                                <p class="menu_account_item_dot"><i class="fas fa-times-circle"></i></p>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Корзина: типовая строка с продуктом -->
-                    <ul class="cartWindow__table cartWindow__table_bootlineGoods">
-                        <li class="cartWindow__table_pd">
-                            <div>
-                                <a href="test.html">
-                                    <img src="img/cart_goods3.png" alt="Товар в корзине"
-                                        class="cartWindow__picture cartWindow__picture_rm">
-                                </a>
-                                <p class="cartWindow__goodsName cartWindow__goodsName_md">Mango People T-shirt</p>
-                                <ul class="cartWindow__goodsType">
-                                    <li>Color:<span class="cartWindow__goodsType_value">Red</span></li>
-                                    <li>Size:<span class="cartWindow__goodsType_value">Xll</span></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="cartWindow__table_up cartWindow__info cartWindow__info_price">$150</li>
-                        <li class="cartWindow__table_up cartWindow__info cartWindow__info_quantity">
-                            <p class="cartWindow__quantity">2</p>
-                        </li>
-                        <li class="cartWindow__table_up cartWindow__info cartWindow__info_shipping">FREE</li>
-                        <li class="cartWindow__table_st cartWindow__info cartWindow__info_shipping">$300</li>
-                        <li class="cartWindow__info cartWindow__info_action">
-                            <a href="test.html" class="nul menu_account_item_cros">
-                                <p class="menu_account_item_dot"><i class="fas fa-times-circle"></i></p>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Корзина: принятие решения -->
-                    <div class="cartButtons cartButtons_pos">
-                        <input type="button" value="cLEAR SHOPPING CART" class="goods_button_cart cartButtons__button">
-                        <input type="button" value="cONTINUE sHOPPING" class="goods_button_cart cartButtons__button">
-                    </div>
-                    <!-- Корзина: оформление -->
-                    <section class="formField">
-                        <div class="cartWindow">
-                            <form action="#">
-                                <h3 class="formField__header formField__header_mb">Shipping Adress</h3>
-                                <details>
-                                    <summary class="collection-details-button_country formField__box_mb">Bangladesh
-                                    </summary>
-                                    <!-- Выпадающее меню-->
-                                    <menu class="menu_list">
-                                        <div class="menu_account_header_box">
-                                        </div>
-                                    </menu>
-                                </details>
-                                <input class="formField__box formField__box_mb" type="text" name="state" id=""
-                                    placeholder="State">
-                                <input class="formField__box formField__box_mb" type="text" name="zip" id=""
-                                    placeholder="Postcode / Zip">
-                                <input type="button" value="get a quote"
-                                    class="goods_button_cart goods_button_cart_small">
-                            </form>
                         </div>
-                        <div class="cartWindow">
-                            <form action="#">
-                                <h3 class="formField__header formField__header_mb">coupon discount</h3>
-                                <legend class="formField__smallHeader formField__smallHeader_mb">Enter your coupon code
-                                    if you have one</legend>
-                                <input class="formField__box formField__box_mb" type="text" name="state" id=""
-                                    placeholder="State">
-                                <input type="button" value="apply coupon"
-                                    class="goods_button_cart goods_button_cart_small">
-                            </form>
-                        </div>
-                        <!-- Кнопка перехода к оплате -->
-                        <div class="checkoutForm">
-                            <p class="checkoutForm__textsmall">Sub&nbsp;total<span
-                                    class="checkoutForm__textsmall_lm">$900</span></p>
-                            <p class="checkoutForm__textbig checkoutForm__textbig_bm">GRAND&nbsp;TOTAL<span
-                                    class="checkoutForm__textbig_lm">$900</span></p>
-                            <input type="button" value="proceed to checkout" class="goods_button">
-                        </div>
-                    </section>
-                </div>
+                    </li>
+                    <li class="checkoutList checkoutList_mb">
+                        <p><span class="checkoutList_rp">02.</span>BILLING INFORMATION</p>
+                    </li>
+                    <li class="checkoutList checkoutList_mb">
+                        <p><span class="checkoutList_rp">03.</span>SHIPPING INFORMATION</p>
+                    </li>
+                    <li class="checkoutList checkoutList_mb">
+                        <p><span class="checkoutList_rp">04.</span>SHIPPING METHOD</p>
+                    </li>
+                    <li class="checkoutList checkoutList_mb">
+                        <p><span class="checkoutList_rp">05.</span>PAYMENT METHOD</p>
+                    </li>
+                    <li class="checkoutList checkoutList_mb">
+                        <p><span class="checkoutList_rp">06.</span>ORDER REVIEW</p>
+                    </li>
+                </ul>
             </section>
         </div>
         <!-- Окно подписки -->
