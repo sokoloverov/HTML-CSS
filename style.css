@@ -20,6 +20,200 @@
   src: url(fonts/Lato/Lato-Bold.ttf);
 }
 
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #ffffff;
+  }
+  100% {
+    background: #f08896;
+  }
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: #ffffff;
+  }
+  100% {
+    background: #f08896;
+  }
+}
+
+@-webkit-keyframes wobble-hor-top {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+            transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+            transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+            transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+            transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+            transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+@keyframes wobble-hor-top {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+            transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+            transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+            transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+            transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+            transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+@-webkit-keyframes shadow-drop-br {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+            box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes shadow-drop-br {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+            box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@-webkit-keyframes kenburns-top-right {
+  0%, 100% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 16%;
+            transform-origin: 84% 16%;
+  }
+  50% {
+    -webkit-transform: scale(1.2) translate(15px, 25px);
+            transform: scale(1.2) translate(15px, 25px);
+    -webkit-transform-origin: right top;
+            transform-origin: right top;
+  }
+}
+
+@keyframes kenburns-top-right {
+  0%, 100% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 16%;
+            transform-origin: 84% 16%;
+  }
+  50% {
+    -webkit-transform: scale(1.2) translate(15px, 25px);
+            transform: scale(1.2) translate(15px, 25px);
+    -webkit-transform-origin: right top;
+            transform-origin: right top;
+  }
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@-webkit-keyframes blink-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes text-color-change {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: #ef5b70;
+  }
+}
+
+@keyframes text-color-change {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: #ef5b70;
+  }
+}
+
 body {
   font-family: 'Lato', 'Lato-Black', 'Lato-Bold', 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
@@ -88,6 +282,8 @@ body {
   position: relative;
   top: -14px;
   margin-right: 13px;
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+          animation: rotate-center 0.6s ease-in-out both;
 }
 
 /*Для дитейлз*/
@@ -129,6 +325,8 @@ details[open] > summary::after {
   font-weight: 300;
   letter-spacing: 0.35px;
   border: 1px solid #e6e6e6;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .button_radius_all {
@@ -205,6 +403,13 @@ details[open] > summary::after {
   margin-right: 28px;
   padding-top: 12px;
   position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header_cart:hover {
+  -webkit-transform: scale(120%, 120%);
+          transform: scale(120%, 120%);
 }
 
 .numbers {
@@ -348,7 +553,12 @@ details[open] > summary::after {
 
 .my {
   float: left;
-  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.my:hover {
+  -webkit-animation: shadow-drop-br 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: shadow-drop-br 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .menu_account_item {
@@ -456,6 +666,8 @@ details[open] > summary::after {
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   padding: 13px 23px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .goods_button_cart:hover {
@@ -494,6 +706,12 @@ details[open] > summary::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.menu_list:hover .menu_link {
+  color: #ef5b70;
+  -webkit-transform: scale(120%, 120%) translateY(-1px);
+          transform: scale(120%, 120%) translateY(-1px);
 }
 
 .menu_mega_header::before {
@@ -589,6 +807,8 @@ details[open] > summary::after {
   line-height: 28px;
   text-transform: uppercase;
   letter-spacing: 0.55px;
+  -webkit-animation: blink-2, text-color-change 0.8s linear infinite alternate both;
+          animation: blink-2, text-color-change 0.8s linear infinite alternate both;
 }
 
 /*СЛАЙДЕР С ТЕКСТОМ*/
@@ -598,13 +818,21 @@ details[open] > summary::after {
 }
 
 .banner {
-  height: 100%;
-  background-image: url(img/slider0.jpg);
+  height: 613px;
+  overflow: hidden;
+}
+
+.banner__slider {
+  position: relative;
+  top: -51px;
+  z-index: 0;
+  -webkit-animation: kenburns-top-right 8s ease-out both;
+          animation: kenburns-top-right 8s ease-out both;
 }
 
 .slider_text {
-  max-width: 1140px;
-  margin: 0 auto;
+  position: relative;
+  top: -670px;
   color: #222222;
   text-transform: uppercase;
   font-weight: 700;
@@ -737,7 +965,7 @@ details[open] > summary::after {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-top: 63px;
+  margin-top: 68px;
   color: #f16d7f;
   font-family: Lato;
   font-size: 14px;
@@ -799,7 +1027,7 @@ details[open] > summary::after {
 
 .collection-price {
   margin-top: 27px;
-  padding-bottom: 29px;
+  padding-bottom: 33px;
   color: #ef5b70;
   width: 642px;
   text-align: center;
@@ -813,7 +1041,7 @@ details[open] > summary::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 40px;
+  margin-top: 45px;
   width: 538px;
   position: relative;
 }
@@ -851,6 +1079,18 @@ details[open] > summary::after {
   background-image: linear-gradient(#f9f9f9 0%, #f5f5f5 100%);
 }
 
+.collection-details-button_color_mb {
+  padding: 0.4em 0;
+}
+
+.collection-details-button_color_mb:hover {
+  color: #ef5b70;
+}
+
+.collection-details-button_color_mt {
+  margin-top: 10px;
+}
+
 .collection-details-button_color::before {
   content: url(img/rectangle_30.png);
   position: relative;
@@ -876,17 +1116,24 @@ details[open] > .collection-details-button::after {
 }
 
 .collection-details__cart {
+  text-decoration: none;
+  margin-bottom: 122px;
+  margin-top: 28px;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.collection-details__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 527px;
-  margin-top: 28px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid #ef5b70;
   padding: 16px 0px;
-  margin-bottom: 122px;
   color: #ef5b70;
   font-family: Lato;
   font-size: 16px;
@@ -894,11 +1141,34 @@ details[open] > .collection-details-button::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  padding-left: 45px;
 }
 
 .collection-details__cart_position {
-  margin-left: 15px;
+  position: absolute;
+  left: 37%;
+  top: 28%;
+}
+
+.collection-choose-details_color {
+  width: 104px;
+  top: -1px;
+  left: -3px;
+}
+
+.collection-choose-details .menu_browse_header::before {
+  left: 16px;
+}
+
+.collection-details__cart:hover {
+  -webkit-box-shadow: 0 0 10px #cdcdcc;
+          box-shadow: 0 0 10px #cdcdcc;
+}
+
+.fa-times-circle:hover {
+  color: #ef5b70;
 }
 
 /*СОПУТСТВУЮЩИЕ ТОВАРЫ*/
@@ -958,10 +1228,20 @@ details[open] > .collection-details-button::after {
   background-image: url(img/menbookmark.jpg);
 }
 
+.catalog_men:hover {
+  -webkit-animation: wobble-hor-top 0.8s both;
+          animation: wobble-hor-top 0.8s both;
+}
+
 .catalog_accesories {
   width: 560px;
   height: 261px;
   background-image: url(img/accesoriesbookmark.jpg);
+}
+
+.catalog_accesories:hover {
+  -webkit-animation: wobble-hor-top 0.8s both;
+          animation: wobble-hor-top 0.8s both;
 }
 
 .catalog_women {
@@ -970,10 +1250,20 @@ details[open] > .collection-details-button::after {
   background-image: url(img/womenbookmark.jpg);
 }
 
+.catalog_women:hover {
+  -webkit-animation: wobble-hor-top 0.8s both;
+          animation: wobble-hor-top 0.8s both;
+}
+
 .catalog_kids {
   width: 560px;
   height: 542px;
   background-image: url(img/kidsbookmark.jpg);
+}
+
+.catalog_kids:hover {
+  -webkit-animation: wobble-hor-top 0.8s both;
+          animation: wobble-hor-top 0.8s both;
 }
 
 /* ширина плашек*/
@@ -1006,6 +1296,13 @@ details[open] > .collection-details-button::after {
   letter-spacing: 0.025em;
   padding-left: 19px;
   margin-top: 27px;
+  margin-left: 9px;
+  -webkit-animation: color-change-2x 4s linear infinite alternate both;
+          animation: color-change-2x 4s linear infinite alternate both;
+  -webkit-transform: scaleX(1) translate(-10px, 15px);
+          transform: scaleX(1) translate(-10px, 15px);
+  -webkit-transition: all 0.5s 0.2s;
+  transition: all 0.5s 0.2s;
 }
 
 .catalog_upper_font {
@@ -1047,6 +1344,15 @@ details[open] > .collection-details-button::after {
   font-weight: 400;
   letter-spacing: 0.025em;
   color: #9f9f9f;
+}
+
+.catalog_bookmarks:hover {
+  -webkit-transform: scaleX(1.1) translate(10px, -15px);
+          transform: scaleX(1.1) translate(10px, -15px);
+  -webkit-animation: shadow-drop-br 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: shadow-drop-br 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-transition: all 0.5s 0s;
+  transition: all 0.5s 0s;
 }
 
 /*ВИТРИНА ТОВАРОВ*/
@@ -1119,6 +1425,8 @@ details[open] > .collection-details-button::after {
 .goods_box:hover {
   -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
           box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  -webkit-animation: color-change-2x 1s linear infinite alternate both;
+          animation: color-change-2x 1s linear infinite alternate both;
 }
 
 .goods_box:hover .goods_cart {
@@ -1172,6 +1480,8 @@ details[open] > .collection-details-button::after {
   color: #ffffff;
   padding: 13px 23px;
   background-color: #f16d7f;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .goods_button:hover {
@@ -1197,6 +1507,11 @@ details[open] > .collection-details-button::after {
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.025em;
+}
+
+.offer_text_box:hover {
+  -webkit-animation: blink-2 1s linear infinite alternate both;
+          animation: blink-2 1s linear infinite alternate both;
 }
 
 .offer_upper_text {
@@ -1273,7 +1588,7 @@ details[open] > .collection-details-button::after {
 }
 
 .cartWindow_position {
-  margin-top: 90px;
+  margin-top: 64px;
 }
 
 .cartWindow__table_left {
@@ -1328,6 +1643,11 @@ details[open] > .collection-details-button::after {
 
 .cartWindow__picture_rm {
   margin-right: 21px;
+}
+
+.cartWindow__picture:hover {
+  -webkit-animation: shadow-drop-br 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: shadow-drop-br 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .cartWindow__goodsName {
@@ -1415,7 +1735,6 @@ details[open] > .collection-details-button::after {
           box-sizing: border-box;
   padding: 16px 18px;
   letter-spacing: 0.35px;
-  color: #bcbcbc;
   font-family: Lato;
   font-size: 13px;
   color: #b1b1b1;
@@ -1480,6 +1799,8 @@ details[open] > .collection-details-button::after {
 .formField__box:focus-visible {
   background-color: #ffffff;
   color: #080808;
+  -webkit-animation: shadow-drop-br 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: shadow-drop-br 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .formField__box_mb {
@@ -1495,6 +1816,24 @@ details[open] > .collection-details-button::after {
 
 .formField__smallHeader_mb {
   margin-bottom: 24px;
+}
+
+.formField__country {
+  top: -20px;
+  left: -1px;
+  width: 294px;
+}
+
+.formField__countryList {
+  margin: 5px 0;
+  font-size: 13px;
+  color: #b1b1b1;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.formField__countryList:hover {
+  color: #ef5b70;
 }
 
 .goods_button_cart_small {
@@ -1526,8 +1865,9 @@ details[open] > .collection-details-button::after {
   text-align: right;
   color: #4a4a4a;
   font-family: Lato;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .checkoutForm__textsmall_lm {
@@ -1559,8 +1899,16 @@ details[open] > .collection-details-button::after {
 }
 
 /*СТРАНИЦА ОФОРМЕНИЯ ЗАКАЗА*/
+.checkoutList summary::after {
+  content: '';
+  padding-left: 0.5em;
+}
+
+.checkoutList details[open] > summary::after {
+  content: '';
+}
+
 .checkoutList {
-  padding-bottom: 32px;
   border-bottom: 1px solid #e8e8e8;
   color: #222222;
   font-family: Lato;
@@ -1570,8 +1918,9 @@ details[open] > .collection-details-button::after {
   list-style: none;
 }
 
-.checkoutList_mb {
-  margin-bottom: 32px;
+.checkoutList_details {
+  padding-top: 33px;
+  padding-bottom: 33px;
 }
 
 .checkoutList_rp {
@@ -1580,6 +1929,13 @@ details[open] > .collection-details-button::after {
 
 .checkoutList:last-of-type {
   margin-bottom: 0px;
+}
+
+.checkoutList_text {
+  text-transform: none;
+  margin-bottom: 20px;
+  margin-left: 33px;
+  color: #f08896;
 }
 
 .login {
@@ -1598,6 +1954,7 @@ details[open] > .collection-details-button::after {
 
 .guest {
   width: 50%;
+  margin-left: 32px;
 }
 
 .guest__header {
@@ -1610,10 +1967,6 @@ details[open] > .collection-details-button::after {
 
 .guest__header_mb {
   margin-bottom: 15px;
-}
-
-.checkoutList_mbopen {
-  margin-bottom: 39px;
 }
 
 .guest__subtite_mb {
@@ -1691,6 +2044,13 @@ details[open] > .collection-details-button::after {
   margin-bottom: 20px;
 }
 
+.registerBox:focus-visible {
+  background-color: #ffffff;
+  color: #080808;
+  -webkit-animation: shadow-drop-br 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: shadow-drop-br 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 .guest__subtite_red {
   color: #ff0d0d;
   font-family: Lato;
@@ -1708,6 +2068,7 @@ details[open] > .collection-details-button::after {
   position: relative;
   top: 55px;
   left: 32px;
+  color: #222222;
 }
 
 /*ОКНО ПОДПИСКИ*/
@@ -1744,6 +2105,13 @@ details[open] > .collection-details-button::after {
   border-radius: 50px;
   float: left;
   margin: 0 25px 100px auto;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.subscribe:hover .subscribe_image {
+  -webkit-transform: scale(110%, 110%);
+          transform: scale(110%, 110%);
 }
 
 .subscribe_rewievs_text {
@@ -1844,6 +2212,8 @@ details[open] > .collection-details-button::after {
 .subscribe_mail:focus-visible {
   background-color: #ffffff;
   color: #080808;
+  -webkit-animation: shadow-drop-br 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: shadow-drop-br 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /*КНОПКА ПОДПИСКИ*/
@@ -1857,6 +2227,8 @@ details[open] > .collection-details-button::after {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.35px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .subscribe_button:hover {

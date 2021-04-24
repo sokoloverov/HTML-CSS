@@ -509,7 +509,7 @@
                         <nav aria-label="breadcrumb nul">
                             <ul class="breadcrumb">
                                 <li><a href="#">Home</a><span>/</span></li>
-                                <li><a href="#">Men</a><span>/</span></li>
+                                <li><a href="#">Woman</a><span>/</span></li>
                                 <li class="active" aria-current="page">New Arrivals</li>
                             </ul>
                         </nav>
@@ -520,65 +520,94 @@
             <section class="main_container cartWindow ">
                 <ul class="cartWindow_position">
                     <li class="checkoutList checkoutList_mb">
-                        <p class="checkoutList_mbopen"><span class="checkoutList_rp">01.</span>Shipping Adress</p>
-                        <div class="login">
-                            <div class="guest">
-                                <p class="guest__header guest__header_mb">Check as a guest or register</p>
-                                <p class="guest__subtite_mb">Register with us for future convenience</p>
-                                <form action="#">
-                                    <fieldset class="guest__verification guest__header guest__header_st">
-                                        <label class="guest__verification_list" for="guest"><input
-                                                class="checkbox-round" name="guest" type="radio" value="guest">checkout
-                                            as
-                                            guest</label>
-                                        <label class="guest__verification_mb" for="register"><input
-                                                class="checkbox-round" name="guest" type="radio" value="register"
-                                                checked>register</label>
-                                    </fieldset>
-                                </form>
-                                <p class="guest__header guest__header_mb">register and save time!</p>
-                                <p class="guest__subtite_mb">Register with us for future convenience</p>
-                                <p class="guest__header_mb guest__subtite_before">Fast and easy checkout</p>
-                                <p class="guest__subtite_before">Easy access to your order history and status</p>
-                                <input type="button" value="Continue"
-                                    class="goods_button_cart goods_button_cart_small goods_button_cart_small_guest">
+                        <details>
+                            <summary class="checkoutList_details"><span class="checkoutList_rp">01.</span>Shipping
+                                Adress
+                            </summary>
+                            <div class="login">
+                                <div class="guest">
+                                    <p class="guest__header guest__header_mb">Check as a guest or register</p>
+                                    <p class="guest__subtite_mb">Register with us for future convenience</p>
+                                    <form action="#">
+                                        <fieldset class="guest__verification guest__header guest__header_st">
+                                            <label class="guest__verification_list" for="guest"><input
+                                                    class="checkbox-round" name="guest" type="radio"
+                                                    value="guest">checkout
+                                                as
+                                                guest</label>
+                                            <label class="guest__verification_mb" for="register"><input
+                                                    class="checkbox-round" name="guest" type="radio" value="register"
+                                                    checked>register</label>
+                                        </fieldset>
+                                    </form>
+                                    <p class="guest__header guest__header_mb">register and save time!</p>
+                                    <p class="guest__subtite_mb">Register with us for future convenience</p>
+                                    <p class="guest__header_mb guest__subtite_before">Fast and easy checkout</p>
+                                    <p class="guest__subtite_before">Easy access to your order history and status</p>
+                                    <input type="button" value="Continue"
+                                        class="goods_button_cart goods_button_cart_small goods_button_cart_small_guest">
+                                </div>
+                                <div>
+                                    <p class="guest__header guest__header_mb">Already registed?</p>
+                                    <p class="guest__subtite_mbsmall">Please log in below</p>
+                                    <form action="#">
+                                        <fieldset class="guest__verification guest__header guest__header_st">
+                                            <label class="guest__header_mb" for="email">EMAIL ADDRESS<span
+                                                    class="guest__verification_star">*</span></label><input
+                                                class="registerBox registerBox_mb" type="email" name="email" id="email"
+                                                required>
+                                            <label class="guest__header_mb" for="password">PASSWORD<span
+                                                    class="guest__verification_star">*</span></label><input
+                                                class="registerBox registerBox_mb" type="password" name="password"
+                                                id="password" required>
+                                            <p class="guest__subtite_red">*&nbsp;Required Fileds</p>
+                                        </fieldset>
+
+                                        <input type="submit" value="Log in"
+                                            class="goods_button_cart goods_button_cart_small goods_button_cart_small_guest goods_button_cart_small_guest_mt">
+                                        <p class="guest__subtite_remind">Forgot Password ?</p>
+                                    </form>
+                                </div>
                             </div>
-                            <div>
-                                <p class="guest__header guest__header_mb">Already registed?</p>
-                                <p class="guest__subtite_mbsmall">Please log in below</p>
-                                <form action="#">
-                                    <fieldset class="guest__verification guest__header guest__header_st">
-                                        <label class="guest__header_mb" for="email">EMAIL ADDRESS<span
-                                                class="guest__verification_star">*</span></label><input
-                                            class="registerBox registerBox_mb" type="email" name="email" id="email"
-                                            required>
-                                        <label class="guest__header_mb" for="password">PASSWORD<span
-                                                class="guest__verification_star">*</span></label><input
-                                            class="registerBox registerBox_mb" type="password" name="password"
-                                            id="password" required>
-                                        <p class="guest__subtite_red">*&nbsp;Required Fileds</p>
-                                    </fieldset>
-                                </form>
-                                <input type="button" value="Log in"
-                                    class="goods_button_cart goods_button_cart_small goods_button_cart_small_guest goods_button_cart_small_guest_mt">
-                                <p class="guest__subtite_remind">Forgot Password ?</p>
-                            </div>
-                        </div>
+                        </details>
                     </li>
                     <li class="checkoutList checkoutList_mb">
-                        <p><span class="checkoutList_rp">02.</span>BILLING INFORMATION</p>
+                        <details>
+                            <summary class="checkoutList_details"><span class="checkoutList_rp">02.</span>BILLING
+                                INFORMATION
+                            </summary>
+                            <p class="checkoutList_text">Pay as much as you can...</p>
+                        </details>
                     </li>
                     <li class="checkoutList checkoutList_mb">
-                        <p><span class="checkoutList_rp">03.</span>SHIPPING INFORMATION</p>
+                        <details>
+                            <summary class="checkoutList_details"><span class="checkoutList_rp">03.</span>SHIPPING
+                                INFORMATION
+                            </summary>
+                            <p class="checkoutList_text">You could wait all life...</p>
+                        </details>
                     </li>
                     <li class="checkoutList checkoutList_mb">
-                        <p><span class="checkoutList_rp">04.</span>SHIPPING METHOD</p>
+                        <details>
+                            <summary class="checkoutList_details"><span class="checkoutList_rp">04.</span>SHIPPING
+                                METHOD
+                            </summary>
+                            <p class="checkoutList_text">By pirates ship...</p>
+                        </details>
                     </li>
                     <li class="checkoutList checkoutList_mb">
-                        <p><span class="checkoutList_rp">05.</span>PAYMENT METHOD</p>
+                        <details>
+                            <summary class="checkoutList_details"><span class="checkoutList_rp">05.</span>PAYMENT METHOD
+                            </summary>
+                            <p class="checkoutList_text">Bitcoins only...</p>
+                        </details>
                     </li>
                     <li class="checkoutList checkoutList_mb">
-                        <p><span class="checkoutList_rp">06.</span>ORDER REVIEW</p>
+                        <details>
+                            <summary class="checkoutList_details"><span class="checkoutList_rp">06.</span>ORDER REVIEW
+                            </summary>
+                            <p class="checkoutList_text">You'll be back soon...</p>
+                        </details>
                     </li>
                 </ul>
             </section>
