@@ -14,827 +14,315 @@
 <body>
     <div class="height100">
         <div class="top">
-            <!-- Шапка заголовка -->
-            <header class="header_box">
-                <div class="main_container header_container">
-                    <a href="index.html" class="nul">
-                        <p class="brand">BRAN<span class="brand_text">D</span></p>
-                    </a>
-                    <!-- Кнопка Browse-->
-                    <div class="goods_button_small_box">
-                        <details>
-                            <summary class="goods_button_small_button">Browse</summary>
-                            <!-- Выпадающее меню под Browse-->
-                            <menu class="menu_list">
-                                <div class="menu_browse_header">
-                                    <div>
-                                        <h3 class="menu_mega_list_header">Women</h3>
-                                        <ul class="menu_mega_link">
-                                            <li><a href="product.html">Dresses</a></li>
-                                            <li><a href="product.html">Tops</a></li>
-                                            <li><a href="product.html">Sweaters/Knits</a></li>
-                                            <li><a href="product.html">Jackets/Coats</a></li>
-                                            <li><a href="product.html">Blazers</a></li>
-                                            <li><a href="product.html">Denim</a></li>
-                                            <li><a href="product.html">Leggings/Pants</a></li>
-                                            <li><a href="product.html">Skirts/Shorts</a></li>
-                                            <li><a href="product.html">Accessories</a></li>
+            <!-- Верхняя черная строка заголовка -->
+            <section class="headerBlackRectangle-r">
+                <div class="main_container">
+                    <div class="headerBlackRectangle-r__box">
+                        <div class="headerBlackRectangle-r__boxSmall">
+                            <img src="../img/brand.png" alt="Логотип бренда" class="headerBlackRectangle-r__brandSmall">
+                            <p class="headerBlackRectangle-r__search"><i class="fas fa-search"></i></p>
+                        </div>
+                        <div class="headerBlackRectangle-r__boxSmall">
+                            <details>
+                                <summary class="headerBlackRectangle-r__menu"><i class="fas fa-bars"></i></summary>
+                                <!-- Выпадающее меню-->
+                                <menu class="menu_list">
+                                    <div class="menu_browse_header-r">
+                                        <p class="menu_mega_list_header-r__cross"><i class="fas fa-times"></i></p>
+                                        <h3 class="menu_mega_list_header-r">MENU</h3>
+                                        <h3 class="menu_mega_list_header-rRed">MAN</h3>
+                                        <ul class="menu_mega_link-r">
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Bags</a></li>
+                                            <li><a href="#">Denim</a></li>
+                                            <li><a href="#">T-shirts</a></li>
                                         </ul>
-                                    </div>
-                                    <div class="menu_mega_list">
-                                        <h3 class="menu_mega_list_header">men</h3>
-                                        <ul class="menu_mega_link">
-                                            <li><a href="product.html">Tees/Tank tops</a></li>
-                                            <li><a href="product.html">Shirts/Polos</a></li>
-                                            <li><a href="product.html">Sweaters</a></li>
-                                            <li><a href="product.html"> Sweatshirts/Hoodies</a></li>
-                                            <li><a href="product.html">Blazers</a></li>
-                                            <li><a href="product.html">Jackets/vests</a></li>
+                                        <h3 class="menu_mega_list_header-rRed">WOMAN</h3>
+                                        <ul class="menu_mega_link-r">
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Jackets&nbsp;&&nbsp;Coats</a></li>
+                                            <li><a href="#">Polos</a></li>
+                                            <li><a href="#">T-shirts</a></li>
+                                            <li><a href="#">Shirts</a></li>
                                         </ul>
-                                    </div>
-                                </div>
-                            </menu>
-                        </details>
-                        <!-- Поиск с подсказками-->
-                        <form action="" method="POST" class="header_action_form">
-                            <input class="header_search_form" type="search" name="poisk"
-                                placeholder="Search for Item..." id="clothes" list="s_clothes">
-                            <datalist id="s_clothes">
-                                <option label="Яблоко" value="apple"></option>
-                                <option label="Ананас" value="ananas"></option>
-                                <option label="Абрикос" value="apricot"></option>
-                                <option label="Арбуз" value="watermelon"></option>
-                                <option label="Авокадо" value="avocado"></option>
-                                <option label="Апельсин" value="Orange"></option>
-                            </datalist>
-                            <button type="submit">
-                                <i class="fas fa-search icon_color"></i>
-                            </button>
-                        </form>
-                    </div>
-                    <!-- Cart-->
-                    <div class="goods_button_small_box cart">
-                        <a href="shoppingcart.html" class="header_cart nul">
-                            <img src="img/cart.png" alt="Корзина">
-                            <p class="numbers">5</p>
-                        </a>
-                        <!-- Кнопка Account-->
-                        <details>
-                            <summary class="goods_button_small_button button_radius_none">My Account</summary>
-                            <!-- Выпадающее меню под Account-->
-                            <menu class="menu_list">
-                                <div class="menu_account_header_box">
-                                    <div class="menu_account_header">
-                                        <a href="singlepage.html" class="nul">
-                                            <img class="my" src="img/layer_43.png" alt="Выбранный товар"></a>
-                                        <div class="menu_account_item">
-                                            <p class="menu_account_item_top">Rebox Zane</p>
-                                            <p class="menu_account_item_stars">
-                                                <!-- Звездочки-->
-                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                    class="fas fa-star"></i>
-                                            </p>
+                                        <h3 class="menu_mega_list_header-rRed">KIDS</h3>
+                                        <ul class="menu_mega_link-r">
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Jackets&nbsp;&&nbsp;Coats</a></li>
+                                            <li><a href="#">Polos</a></li>
+                                            <li><a href="#">T-shirts</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                            <li><a href="#">Bags</a></li>
+                                        </ul>
 
-                                            <p class="menu_account_item_price">1 <span class="x">x</span> $250</p>
-                                        </div>
-                                        <a href="product.html" class="nul menu_account_item_cros">
-                                            <p class="menu_account_item_dot"><i class="fas fa-times-circle"></i></p>
-                                        </a>
                                     </div>
-                                    <hr class="item_line">
-                                    <div class="menu_account_header">
-                                        <a href="singlepage.html" class="nul">
-                                            <img class="my" src="img/layer_44.png" alt="Выбранный товар"></a>
-                                        <div class="menu_account_item">
-                                            <p class="menu_account_item_top">Rebox Zane</p>
-                                            <p class="menu_account_item_stars">
-                                                <!-- Звездочки-->
-                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                    class="fas fa-star"></i>
-                                            </p>
-                                            <p class="menu_account_item_price">1 <span class="x">x</span> $250</p>
-                                        </div>
-                                        <a href="product.html" class="nul">
-                                            <p class="menu_account_item_dot"><i class="fas fa-times-circle"></i></p>
-                                        </a>
-                                    </div>
-                                    <hr class="item_line">
-                                    <div class="menu_account_item_total">
-                                        <p>TOTAL</p>
-                                        <p>$500.00</p>
-                                    </div>
-                                    <div class="my_checkout">
-                                        <a href="checkout.html" class="w100">
-                                            <button class="goods_button w100">Checkout</button>
-                                        </a>
-                                    </div>
-                                    <div class="my_checkout">
-                                        <a href="shoppingcart.html" class="w100">
-                                            <button class="goods_button_cart w100"> <span class="my_cart">Go to
-                                                    cart</span>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </menu>
-                        </details>
-                    </div>
-                </div>
-            </header>
-            <!-- Строчное меню + выпадающее -->
-            <menu class="main_container">
-                <ul class="menu_header">
-                    <li class="menu_list"><a href="product.html" class="menu_link nul">HOME</a>
-                        <!--выпадающее-->
-                        <div class="menu_mega_header">
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                    <li><a href="product.html">Skirts/Shorts</a></li>
-                                    <li><a href="product.html">Accessories</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <h3 class="menu_mega_list_header">Women</h3>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <a href="product.html" class="nul">
-                                        <!--картинка-->
-                                        <div class="menu_mega_list_sale">
-                                            <p class="menu_mega_list_sale_text">super sale!</p>
-                                        </div>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu_list"><a href="product.html" class="menu_link nul">MAN</a>
-                        <!--выпадающее-->
-                        <div class="menu_mega_header">
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                    <li><a href="product.html">Skirts/Shorts</a></li>
-                                    <li><a href="product.html">Accessories</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <h3 class="menu_mega_list_header">Women</h3>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <a href="product.html" class="nul">
-                                        <!--картинка-->
-                                        <div class="menu_mega_list_sale">
-                                            <p class="menu_mega_list_sale_text">super sale!</p>
-                                        </div>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu_list"><a href="product.html" class="menu_link nul">WOMEN</a>
-                        <!--выпадающее-->
-                        <div class="menu_mega_header">
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                    <li><a href="product.html">Skirts/Shorts</a></li>
-                                    <li><a href="product.html">Accessories</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <h3 class="menu_mega_list_header">Women</h3>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <a href="product.html" class="nul">
-                                        <!--картинка-->
-                                        <div class="menu_mega_list_sale">
-                                            <p class="menu_mega_list_sale_text">super sale!</p>
-                                        </div>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu_list"><a href="product.html" class="menu_link nul">KIDS</a>
-                        <!--выпадающее-->
-                        <div class="menu_mega_header">
-
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                    <li><a href="product.html">Skirts/Shorts</a></li>
-                                    <li><a href="product.html">Accessories</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <h3 class="menu_mega_list_header">Women</h3>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <a href="product.html" class="nul">
-                                        <!--картинка-->
-                                        <div class="menu_mega_list_sale">
-                                            <p class="menu_mega_list_sale_text">super sale!</p>
-                                        </div>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu_list"><a href="product.html" class="menu_link nul">ACCESORIES</a>
-                        <!--выпадающее-->
-                        <div class="menu_mega_header">
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                    <li><a href="product.html">Skirts/Shorts</a></li>
-                                    <li><a href="product.html">Accessories</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <h3 class="menu_mega_list_header">Women</h3>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <a href="product.html" class="nul">
-                                        <!--картинка-->
-                                        <div class="menu_mega_list_sale">
-                                            <p class="menu_mega_list_sale_text">super sale!</p>
-                                        </div>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu_list"><a href="product.html" class="menu_link nul">FEATURED</a>
-                        <!--выпадающее-->
-                        <div class="menu_mega_header">
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                    <li><a href="product.html">Skirts/Shorts</a></li>
-                                    <li><a href="product.html">Accessories</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <h3 class="menu_mega_list_header">Women</h3>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <a href="product.html" class="nul">
-                                        <!--картинка-->
-                                        <div class="menu_mega_list_sale">
-                                            <p class="menu_mega_list_sale_text">super sale!</p>
-                                        </div>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu_list"><a href="product.html" class="menu_link nul">HOT&nbsp;DEALS</a>
-                        <!--выпадающее-->
-                        <div class="menu_mega_header">
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                    <li><a href="product.html">Skirts/Shorts</a></li>
-                                    <li><a href="product.html">Accessories</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <h3 class="menu_mega_list_header">Women</h3>
-                                    <li><a href="product.html">Blazers</a></li>
-                                    <li><a href="product.html">Denim</a></li>
-                                    <li><a href="product.html">Leggings/Pants</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu_mega_list">
-                                <!--столбцы-->
-                                <h3 class="menu_mega_list_header">Women</h3>
-                                <ul class="menu_mega_link">
-                                    <li><a href="product.html">Dresses</a></li>
-                                    <li><a href="product.html">Tops</a></li>
-                                    <li><a href="product.html">Sweaters/Knits</a></li>
-                                    <li><a href="product.html">Jackets/Coats</a></li>
-                                    <a href="product.html" class="nul">
-                                        <!--картинка-->
-                                        <div class="menu_mega_list_sale">
-                                            <p class="menu_mega_list_sale_text">super sale!</p>
-                                        </div>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </menu>
-            <!-- Слайдер с текстом -->
-            <div class="slider">
-                <div class="banner main_container">
-                    <img src="img/slider0.jpg" alt="Фоновый слайд" class="banner__slider">
-                    <div class="slider_text">
-                        <img src="img/rectangle.png" alt="" class="slider_rectangle">
-                        <p class="slider_upper_text">THE BRAND</p>
-                        <p class="slider_lower_text">OF LUXERIOUS <span class="slider_word">FASHION</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container">
-                <!-- Раздел ключевых закладок каталога -->
-                <div class="catalog_bookmarks_big_container">
-                    <div class="catalog_bookmarks_small_container">
-                        <a href="product.html" class="no_underline">
-                            <div class="catalog_men">
-                                <div class="catalog_bookmarks men">
-                                    <p class="catalog_upper_font">hOT dEAL</p>
-                                    <p class="catalog_lower_font">FOR MEN</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="product.html" class="no_underline">
-                            <div class="catalog_accesories">
-                                <div class="catalog_bookmarks accesories">
-                                    <p class="catalog_upper_font">LUXIROUS & trendy</p>
-                                    <p class="catalog_lower_font">ACCESORIES</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="catalog_bookmarks_small_container">
-                        <a href="product.html" class="no_underline">
-                            <div class="catalog_women">
-                                <div class="catalog_bookmarks women">
-                                    <p class="catalog_upper_font">30% OFFER</p>
-                                    <p class="catalog_lower_font">WOMEN</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="product.html" class="no_underline">
-                            <div class="catalog_kids">
-                                <div class="catalog_bookmarks kids">
-                                    <p class="catalog_upper_font">NEW ARRIVALS</p>
-                                    <p class="catalog_lower_font">FOR KIDS</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <section>
-                    <!-- Объявление товаров -->
-                    <div class="ads_goods">
-                        <p class="ads_goods_upper_font">Fetured Items</p>
-                        <p class="ads_goods_lower_font">Shop for items based on what we featured in this week</p>
-                    </div>
-                    <!-- Витрина товаров -->
-                    <div class="good_box_big">
-                        <!-- Карточка товара -->
-                        <div class="goods_box">
-                            <a href="singlepage.html">
-                                <figure>
-                                    <img src="img/goods1.jpg" alt="Товар">
-                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
-                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
-                                </figure>
+                                </menu>
+                            </details>
+                            <p class="headerBlackRectangle-r__enter"><i class="far fa-user"></i></p>
+                            <a href="#" class=" nul header_cart-r">
+                                <img src="../img/cart_w.png" alt="Корзина">
+                                <p class="numbers-r">5</p>
                             </a>
-                            <div class="goods_cart">
-                                <a href="singlepage.html" class="goods_cart_a">
-                                    <img src="img/cartw.png" alt="Корзина" class="goods_cart_right">
-                                    <p>Add to cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="goods_box">
-                            <a href="product.html">
-                                <figure>
-                                    <img src="img/goods2.jpg" alt="Товар">
-                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
-                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
-                                </figure>
-                            </a>
-                            <div class="goods_cart">
-                                <a href="singlepage.html" class="goods_cart_a">
-                                    <img src="img/cartw.png" alt="Корзина" class="goods_cart_right">
-                                    <p>Add to cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="goods_box">
-                            <a href="singlepage.html">
-                                <figure>
-                                    <img src="img/goods3.jpg" alt="Товар">
-                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
-                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
-                                </figure>
-                            </a>
-                            <div class="goods_cart">
-                                <a href="singlepage.html" class="goods_cart_a">
-                                    <img src="img/cartw.png" alt="Корзина" class="goods_cart_right">
-                                    <p>Add to cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="goods_box">
-                            <a href="singlepage.html">
-                                <figure>
-                                    <img src="img/goods4.jpg" alt="Товар">
-                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
-                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
-                                </figure>
-                            </a>
-                            <div class="goods_cart">
-                                <a href="singlepage.html" class="goods_cart_a">
-                                    <img src="img/cartw.png" alt="Корзина" class="goods_cart_right">
-                                    <p>Add to cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="goods_box">
-                            <a href="singlepage.html">
-                                <figure>
-                                    <img src="img/goods5.jpg" alt="Товар">
-                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
-                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
-                                </figure>
-                            </a>
-                            <div class="goods_cart">
-                                <a href="singlepage.html" class="goods_cart_a">
-                                    <img src="img/cartw.png" alt="Корзина" class="goods_cart_right">
-                                    <p>Add to cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="goods_box">
-                            <a href="singlepage.html">
-                                <figure>
-                                    <img src="img/goods6.jpg" alt="Товар">
-                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
-                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
-                                </figure>
-                            </a>
-                            <div class="goods_cart">
-                                <a href="product.html" class="goods_cart_a">
-                                    <img src="img/cartw.png" alt="Корзина" class="goods_cart_right">
-                                    <p>Add to cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="goods_box">
-                            <a href="singlepage.html">
-                                <figure>
-                                    <img src="img/goods7.jpg" alt="Товар">
-                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
-                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
-                                </figure>
-                            </a>
-                            <div class="goods_cart">
-                                <a href="singlepage.html" class="goods_cart_a">
-                                    <img src="img/cartw.png" alt="Корзина" class="goods_cart_right">
-                                    <p>Add to cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="goods_box">
-                            <a href="singlepage.html">
-                                <figure>
-                                    <img src="img/goods8.jpg" alt="Товар">
-                                    <figcaption class="goods_box_upper_font">Mango People T-shirt</figcaption>
-                                    <figcaption class="goods_box_lower_font">$52.00</figcaption>
-                                </figure>
-                            </a>
-                            <div class="goods_cart">
-                                <a href="singlepage.html" class="goods_cart_a">
-                                    <img src="img/cartw.png" alt="Корзина" class="goods_cart_right">
-                                    <p>Add to cart</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Смотреть весь каталог -->
-                <div class="goods_button_box">
-                    <a href="product.html" class="">
-                        <button class="goods_button">Browse All Product&#160&#160<i
-                                class="fas fa-long-arrow-alt-right"></i></button>
-                    </a>
-                </div>
-                <!-- Оферта -->
-                <a href="product.html" class="no_underline">
-                    <div class="catalog_bookmarks_big_container">
-                        <div class="offer">
-                            <div class="offer_text_box">
-                                <p class="offer_upper_text">30% <span class="offer_red">OFFER</span></p>
-                                <p class="offer_lower_text">FOR WOMEN</p>
-                            </div>
-                        </div>
-                        <!-- Преимущества -->
-                        <div class="offer_benefits_box">
-                            <ul class="offer_benefits">
-                                <li class="offer_benefits_li1">
-                                    <p class="offer_upper_text_benefits">Free Delivery</p>
-                                    <p class="offer_lower_text_benefits">Worldwide delivery on all. Authorit tively
-                                        morph
-                                        next-generation innov tion with
-                                        extensive models.</p>
-                                </li>
-                                <li class="offer_benefits_li1">
-                                    <p class="offer_upper_text_benefits">Sales & discounts</p>
-                                    <p class="offer_lower_text_benefits">Worldwide delivery on all. Authorit tively
-                                        morph
-                                        next-generation innov tion with extensive models.</p>
-                                </li>
-                                <li class="offer_benefits_li1">
-                                    <p class="offer_upper_text_benefits">Quality assurance</p>
-                                    <p class="offer_lower_text_benefits">Worldwide delivery on all. Authorit tively
-                                        morph
-                                        next-generation innov tion with extensive models.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- Окно подписки -->
-            <section>
-                <div class="subscribe">
-                    <div class="subscribe_container">
-                        <figure>
-                            <div class="subscribe_rewievs">
-                                <img src="img/emely.jpg" alt="Emely" class="subscribe_image">
-                                <figcaption>
-                                    <p class="subscribe_rewievs_text">“Vestibulum quis porttitor dui! Quisque viverra
-                                        nunc mi, a
-                                        pulvinar
-                                        purus
-                                        condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
-                                    <p class="subscribe_rewievs_name">Bin Burhan</p>
-                                    <p class="subscribe_rewievs_position">Dhaka, Bd</p>
-                                </figcaption>
-                                <ul class="subscribe_rewievs_order">
-                                    <li class="subscribe_rewievs_order_sign"></li>
-                                    <li class="subscribe_rewievs_order_sign"></li>
-                                    <li class="subscribe_rewievs_order_sign"></li>
-                                </ul>
-                            </div>
-                        </figure>
-                        <div class="vertical_line"></div>
-                        <div class="subscribe_action">
-                            <legend class="subscribe_action_upper_text">Subscribe</legend>
-                            <p class="subscribe_action_lower_text">FOR OUR NEWLETTER AND PROMOTION</p>
-                            <form action="#" method="post">
-                                <input class="subscribe_mail" type="email" name="email" id="email"
-                                    placeholder="Enter Your Email" required
-                                    pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"><input
-                                    class="subscribe_button" type="submit" value="Subscribe">
-                            </form>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- Слайдер-->
+            <section class="headerSliderRectangle-r">
+                <div class="main_container">
+                    <img src="../img/slider-r.png" alt="Банер слайдера" class="headerSlider-r">
+                    <div class="slider_text-r">
+                        <img src="../img/rectangle.png" alt="Прямоугольник красный" class="slider_rectangle-r">
+                        <p class="slider_upper_text-r">THE BRAND</p>
+                        <p class="slider_lower_text-r">OF LUXERIOUS <span class="slider_word">FASHION</span></p>
+                    </div>
+                </div>
+            </section>
+            <!-- Раздел ключевых закладок каталога -->
+            <section class="main_container">
+                <div class="bookmarksBox-r">
+                    <a href="#" class="bookmarksBox-r__element">
+                        <img src="../img/bookmark_women.png" alt="Раздел" class="bookmarksBox-r__picture">
+                        <div class="bookmarksBox-r__words">
+                            <p class="catalog_upper_font-r">30% OFF</p>
+                            <p class="catalog_lower_font-r">FOR WOMEN</p>
+                        </div>
+                    </a>
+                    <a href="#" class="bookmarksBox-r__element">
+                        <img src="../img/bookmark_men.png" alt="Раздел" class="bookmarksBox-r__picture">
+                        <div class="bookmarksBox-r__words">
+                            <p class="catalog_upper_font-r">HOT DEAL</p>
+                            <p class="catalog_lower_font-r">FOR MEN</p>
+                        </div>
+                    </a>
+                    <a href="#" class="bookmarksBox-r__element">
+                        <img src="../img/bookmarks_kids.png" alt="Раздел" class="bookmarksBox-r__picture">
+                        <div class="bookmarksBox-r__words">
+                            <p class="catalog_upper_font-r">NEW ARRIVALS</p>
+                            <p class="catalog_lower_font-r">FOR KIDS</p>
+                        </div>
+                    </a>
+                    <a href="#" class="bookmarksBox-r__element bookmarksBox-r__element_100w">
+                        <img src="../img/bookmark_acces.png" alt="Раздел" class="bookmarksBox-r__picture">
+                        <div class="bookmarksBox-r__words">
+                            <p class="catalog_upper_font-r">LUXIROUS&nbsp;&&nbsp;trendy</p>
+                            <p class="catalog_lower_font-r">ACCESORIES</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- Объявление товаров -->
+            <div class="ads_goods-r">
+                <p class="ads_goods_upper_font">Fetured Items</p>
+                <p class="ads_goods_lower_font">Shop for items based on what we featured in this week</p>
+            </div>
+            <!-- Витрина товаров -->
+            <section class="main_container">
+                <div class="bookmarksBoxBig bookmarksBoxBig_mb">
+                    <div class="bookmarksBox__Goods-r">
+                        <a href="#" class="bookmarksBox-r__element_fd">
+                            <img src="../img/goods-r-1.png" alt="Товар" class="bookmarksBox-r__100w">
+                            <div class="bookmarksBox-r__info">
+                                <figcaption class="goods_box_upper_font-r__header">ELLERY X M'O CAPSULE</figcaption>
+                                <figcaption class="goods_box_upper_font-r__text">Known for her sculptural takes on
+                                    traditional
+                                    tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                                </figcaption>
+                                <figcaption class="goods_box_lower_font-r__text_red">$52.00</figcaption>
+                            </div>
+                        </a>
+                        <div class="bookmarksBox-r__cartBox">
+                            <a href="#" class="goods_cart_a-r">
+                                <img src="../img/cartw.png" alt="Корзина" class="goods_cart_right">
+                                <p>Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bookmarksBox__Goods-r">
+                        <a href="#" class="bookmarksBox-r__element_fd">
+                            <img src="../img/goods-r-2.png" alt="Товар"
+                                class="bookmarksBox-r__100w bookmarksBox-r__100w_c">
+                            <div class="bookmarksBox-r__info">
+                                <figcaption class="goods_box_upper_font-r__header">ELLERY X M'O CAPSULE</figcaption>
+                                <figcaption class="goods_box_upper_font-r__text">Known for her sculptural takes on
+                                    traditional
+                                    tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                                </figcaption>
+                                <figcaption class="goods_box_lower_font-r__text_red">$52.00</figcaption>
+                            </div>
+                        </a>
+                        <div class="bookmarksBox-r__cartBox">
+                            <a href="#" class="goods_cart_a-r">
+                                <img src="../img/cartw.png" alt="Корзина" class="goods_cart_right">
+                                <p>Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bookmarksBox__Goods-r">
+                        <a href="#" class="bookmarksBox-r__element_fd">
+                            <img src="../img/goods-r-3.png" alt="Товар" class="bookmarksBox-r__100w">
+                            <div class="bookmarksBox-r__info">
+                                <figcaption class="goods_box_upper_font-r__header">ELLERY X M'O CAPSULE</figcaption>
+                                <figcaption class="goods_box_upper_font-r__text">Known for her sculptural takes on
+                                    traditional
+                                    tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                                </figcaption>
+                                <figcaption class="goods_box_lower_font-r__text_red">$52.00</figcaption>
+                            </div>
+                        </a>
+                        <div class="bookmarksBox-r__cartBox">
+                            <a href="#" class="goods_cart_a-r">
+                                <img src="../img/cartw.png" alt="Корзина" class="goods_cart_right">
+                                <p>Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bookmarksBox__Goods-r">
+                        <a href="#" class="bookmarksBox-r__element_fd">
+                            <img src="../img/goods-r-4.png" alt="Товар" class="bookmarksBox-r__100w">
+                            <div class="bookmarksBox-r__info">
+                                <figcaption class="goods_box_upper_font-r__header">ELLERY X M'O CAPSULE</figcaption>
+                                <figcaption class="goods_box_upper_font-r__text">Known for her sculptural takes on
+                                    traditional
+                                    tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                                </figcaption>
+                                <figcaption class="goods_box_lower_font-r__text_red">$52.00</figcaption>
+                            </div>
+                        </a>
+                        <div class="bookmarksBox-r__cartBox">
+                            <a href="#" class="goods_cart_a-r">
+                                <img src="../img/cartw.png" alt="Корзина" class="goods_cart_right">
+                                <p>Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bookmarksBox__Goods-r">
+                        <a href="#" class="bookmarksBox-r__element_fd">
+                            <img src="../img/goods-r-5.png" alt="Товар"
+                                class="bookmarksBox-r__100w bookmarksBox-r__100w_c">
+                            <div class="bookmarksBox-r__info">
+                                <figcaption class="goods_box_upper_font-r__header">ELLERY X M'O CAPSULE</figcaption>
+                                <figcaption class="goods_box_upper_font-r__text">Known for her sculptural takes on
+                                    traditional
+                                    tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                                </figcaption>
+                                <figcaption class="goods_box_lower_font-r__text_red">$52.00</figcaption>
+                            </div>
+                        </a>
+                        <div class="bookmarksBox-r__cartBox">
+                            <a href="#" class="goods_cart_a-r">
+                                <img src="../img/cartw.png" alt="Корзина" class="goods_cart_right">
+                                <p>Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bookmarksBox__Goods-r">
+                        <a href="#" class="bookmarksBox-r__element_fd">
+                            <img src="../img/goods-r-6.png" alt="Товар" class="bookmarksBox-r__100w">
+                            <div class="bookmarksBox-r__info">
+                                <figcaption class="goods_box_upper_font-r__header">ELLERY X M'O CAPSULE</figcaption>
+                                <figcaption class="goods_box_upper_font-r__text">Known for her sculptural takes on
+                                    traditional
+                                    tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                                </figcaption>
+                                <figcaption class="goods_box_lower_font-r__text_red">$52.00</figcaption>
+                            </div>
+                        </a>
+                        <div class="bookmarksBox-r__cartBox">
+                            <a href="#" class="goods_cart_a-r">
+                                <img src="../img/cartw.png" alt="Корзина" class="goods_cart_right">
+                                <p>Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Смотреть весь каталог -->
+                <div class="goods_button_box">
+                    <a href="#">
+                        <button class="goods_button">Browse All Product</button>
+                    </a>
+                </div>
+            </section>
+            <!-- Преимущества -->
+            <section class="benefits">
+                <div class="main_container">
+                    <ul class="benefits__rectangel">
+                        <li class="benefits__rectangel_block">
+                            <img src="../img/trak.png" alt="Track" class="benefits__rectangel_img">
+                            <p class="offer_upper_text_benefits">Free Delivery</p>
+                            <p class="offer_lower_text_benefits">Worldwide delivery on all. Authorit tively
+                                morph
+                                next-generation innov tion with
+                                extensive models.</p>
+                        </li>
+                        <li class="benefits__rectangel_block">
+                            <img src="../img/discount.png" alt="Discount" class="benefits__rectangel_img">
+                            <p class="offer_upper_text_benefits">Sales & discounts</p>
+                            <p class="offer_lower_text_benefits">Worldwide delivery on all. Authorit tively
+                                morph
+                                next-generation innov tion with extensive models.</p>
+                        </li>
+                        <li class="benefits__rectangel_block">
+                            <img src="../img/crown.png" alt="Crown" class="benefits__rectangel_img">
+                            <p class="offer_upper_text_benefits">Quality assurance</p>
+                            <p class="offer_lower_text_benefits">Worldwide delivery on all. Authorit tively
+                                morph
+                                next-generation innov tion with extensive models.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Окно подписки -->
+            <section class="subscribe_container-r subscribe_container-r_bgImg">
+                <div class="main_container ">
+                    <div class="subscribe-r">
+                        <figure class="subscribe-r__client">
+                            <div class="subscribe_rewievs-r">
+                                <img src="../img/emely-r.png" alt="Emely" class="subscribe_image-r">
+                                <figcaption class="subscribe_rewievs_text-r">
+                                    <p>
+                                        “Vestibulum quis porttitor dui! Quisque viverra
+                                        nunc mi, a pulvinar purus condimentum”</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+                        <div class="subscribe-r__middle"></div>
+                        <div class="subscribe_rewievs-r__mail">
+                            <legend class="subscribe_action_upper_text">Subscribe</legend>
+                            <p class="subscribe_action_lower_text">FOR OUR NEWLETTER AND PROMOTION</p>
+                            <form action="#" method="post">
+                                <input class="subscribe_mail subscribe_mail-r" type="email" name="email" id="email"
+                                    placeholder="Enter Your Email" required><input class="subscribe_button"
+                                    type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <img src="../img/subscribe-r.png" alt="Окно подписки" class="subscribe-r__bg">
+            </section>
         </div>
         <!-- Футтер -->
         <footer>
-            <div class="main_container">
-                <div class="footer_upper_box">
-                    <div class="">
-                        <a href="index.html" class="nul">
-                            <p class="brand">BRAN<span class="brand_text">D</span></p>
-                        </a>
-                        <p class="footer_text_block">Objectively transition extensive data rather than cross functional
-                            solutions. Monotonectally
-                            syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
-                            expanded array of processes and cross-unit partnerships.</p>
-                        <p class="footer_text_block">Efficiently plagiarize 24/365 action items and focused
-                            infomediaries.
-                            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
-                        </p>
-                    </div>
-                    <menu class="footer_menu">
-                        <div>
-                            <h3 class="footer_heder_list">COMPANY</h3>
-                            <ul class="menu_mega_link footer_list">
-                                <li><a href="product.html">Home</a></li>
-                                <li><a href="product.html">Shop</a></li>
-                                <li><a href="product.html">About</a></li>
-                                <li><a href="product.html">How It Works</a></li>
-                                <li><a href="product.html">Contacts</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="footer_heder_list">INFORMATION</h3>
-                            <ul class="menu_mega_link footer_list">
-                                <li><a href="product.html">Tearms & Condition</a></li>
-                                <li><a href="product.html">Privacy Policy</a></li>
-                                <li><a href="product.html">How to Buy</a></li>
-                                <li><a href="product.html">How to Sell</a></li>
-                                <li><a href="product.html">Promotion</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="footer_heder_list">SHOP CATEGORY</h3>
-                            <ul class="menu_mega_link footer_list">
-                                <li><a href="product.html">Men</a></li>
-                                <li><a href="product.html">Women</a></li>
-                                <li><a href="product.html">Child</a></li>
-                                <li><a href="product.html">Apparel</a></li>
-                                <li><a href="product.html">Brows All</a></li>
-                            </ul>
-                        </div>
-                    </menu>
-                </div>
-            </div>
-            <!-- Футтер самый низ -->
-            <div class="footer_lower_box">
+            <div class="footer_lower_box-r">
                 <div class="footer_lower_container">
                     <div>
-                        <p class="copyright">&copy; 2017 Brand All Rights Reserved.</p>
+                        <p class="copyright copyright-r">&copy; 2017 Brand All Rights Reserved.</p>
                     </div>
                     <!-- Иконки соцгрупп -->
                     <menu class="social_list">
                         <a href="https://facebook.com/">
                             <p class="social_list_icon"><i class="fab fa-facebook-f"></i></p>
                         </a>
-                        <a href="https://twitter.com/">
-                            <p class="social_list_icon"><i class="fab fa-twitter twitter"></i></p>
-                        </a>
-                        <a href="https://linkedin.com">
-                            <p class="social_list_icon"><i class="fab fa-linkedin-in"></i></p>
+                        <a href="https://plus.google.com/">
+                            <p class="social_list_icon"><i class="fab fa-instagram"></i></p>
                         </a>
                         <a href="https://www.pinterest.ru/">
                             <p class="social_list_icon"><i class="fab fa-pinterest-p"></i></p>
                         </a>
-                        <a href="https://plus.google.com/">
-                            <p class="social_list_icon"><i class="fab fa-google-plus-g"></i></p>
+                        <a href="https://twitter.com/">
+                            <p class="social_list_icon"><i class="fab fa-twitter twitter"></i></p>
                         </a>
                     </menu>
                 </div>
